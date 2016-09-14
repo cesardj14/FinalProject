@@ -1,0 +1,11 @@
+-Seccion para redes sociales
+-Diseño a juicio del equipo
+-Subscripcion a la pagina (auth)
+-Secciones: Home, Quienes somos, Paquetes, Eventos, Noticias (enlace con paginacion), Contacto.
+-Twitter
+-Paquetes: Destinos Nacionales y destinos internacionales Y por ultimo listado de paquetes
+-Para precios -> contacto
+-Tipo de venta: Plan Vacacional, Conciertos, Fiestas
+-Redirigir el motivo
+-Eventos: Solicito realizacion de un evento y Solicitar cupo para el evento
+-
