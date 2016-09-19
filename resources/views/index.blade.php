@@ -1,4 +1,3 @@
-
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -8,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Outdoors a Travel Category  Flat Bootstrap Responsive Website Template | Home :: w3layouts</title>
+    <title>TioVEN</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Outdoors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -58,19 +57,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="fixed-header">
                 <!--logo-->
                 <div class="logo">
-                    <a href="index.html"><h1>Outdoors</h1></a>
+                    <a href="{{ url('/') }}"><h1>TioVEN</h1></a>
                 </div>
                 <!--//logo-->
                 <div class="top-menu">
                     <span class="menu"> </span>
                     <nav class="link-effect-4" id="link-effect-4">
                         <ul>
-                            <li class="active"><a data-hover="Home" href="index.html">Home</a></li>
-                            <li><a data-hover="About" href="#about" class="scroll">About</a></li>
-                            <li><a data-hover="Gallery" href="#gallery" class="scroll">Gallery</a></li>
-                            <li><a data-hover="Blogs" href="#blogs" class="scroll">Blogs</a></li>
-                            <li><a data-hover="Services" href="#services" class="scroll">Services</a></li>
-                            <li><a data-hover="Contact" href="#contact" class="scroll">Contact</a></li>
+                            <li class="active"><a data-hover="Inicio" href="index.html">Inicio</a></li>
+                            <li><a data-hover="Nosotros" href="#about" class="scroll">Nosotros</a></li>
+                            <li><a data-hover="Galeria" href="#gallery" class="scroll">Galeria</a></li>
+                            <li><a data-hover="Paquetes" href="#blogs" class="scroll">Paquetes</a></li>
+                            <li><a data-hover="Noticias" href="#services" class="scroll">Noticias</a></li>
+                            <li><a data-hover="Contacto" href="#contact" class="scroll">Contacto</a></li>
 
                         </ul>
                     </nav>
@@ -102,56 +101,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
     </div>
-    <div class="banner-slider">
-        <div class="callbacks_container">
-            <ul class="rslides" id="slider4">
-                <li>
-                    <div class="banner-info">
-                        <h2 class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s">There are many variations of passages.</h2>
-                        <p class="wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s">Pellentesque habitant morbi tristique senetus.</p>
-                        <a href="single.html" class="hvr-bounce-to-bottom">READ MORE</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="banner-info">
-                        <h3 class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s">Lorem ipsum dolor  amet, consectetur.</h3>
-                        <p class="wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s">Praesent quis libero or, consectetur lacus .</p>
-                        <a href="single.html" class="hvr-bounce-to-bottom">READ MORE</a>
-                    </div>
-                </li>
-                <li>
-                    <div class="banner-info">
-                        <h3 class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s">Nunc egestas leo ligula, in vehicula.</h3>
-                        <p class="wow slideInDown"  data-wow-duration="1s" data-wow-delay=".3s">Vestibul ante ipsum primis in faucibus luctus.</p>
-                        <a href="single.html" class="hvr-bounce-to-bottom">READ MORE</a>
-                    </div>
-                </li>
-            </ul>
-        </div>
-        <!--banner Slider starts Here-->
-        <script src="js/responsiveslides.min.js"></script>
-        <script>
-            // You can also use "$(window).load(function() {"
-            $(function () {
-                // Slideshow 4
-                $("#slider4").responsiveSlides({
-                    auto: true,
-                    pager:true,
-                    nav:false,
-                    speed: 500,
-                    namespace: "callbacks",
-                    before: function () {
-                        $('.events').append("<li>before event fired.</li>");
-                    },
-                    after: function () {
-                        $('.events').append("<li>after event fired.</li>");
-                    }
-                });
 
-            });
-        </script>
-        <!--banner Slider starts Here-->
-    </div>
 
     <div class="down"><a class="scroll" href="#touch"><img src="images/down.png" alt=""></a></div>
 </div>
@@ -360,7 +310,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--Blogs -->
 <div class="blogs" id="blogs">
     <div class="container">
-        <h3 class="tittle">Our Blogs</h3>
+        <h3 class="tittle">Paquetes</h3>
         <p class="wel-text wow fadeInDown"  data-wow-duration=".8s" data-wow-delay=".4s">Nam libero tempore cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus omnis optio cumque nihil impedit quo minus id quod maxime placeat facere possimus.</p>
         <div class="inst-grids">
             <a href="single.html"><div class="col-md-4 blog-gd-w3ls">
@@ -402,7 +352,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- services -->
 <div class="service" id="services">
     <div class="container">
-        <h3 class="tittle">Our Services</h3>
+        <h3 class="tittle">Eventos</h3>
         <div class="inst-grids">
             <div class="col-md-6 services-gd sgd1 text-center wow slideInLeft"  data-wow-duration="1s" data-wow-delay=".3s">
                 <div class=" col-md-2 hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
@@ -456,7 +406,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div id="review" class="reviews">
 
     <div class="test-monials">
-        <h3 class="tittle">Testimonials</h3>
+        <h3 class="tittle">Noticias</h3>
         <!--//screen-gallery-->
         <div class="sreen-gallery-cursual">
             <!-- required-js-files-->
@@ -525,7 +475,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--contact-->
 <div class="section-contact" id="contact">
     <div class="container">
-        <h3 class="tittle">Contact Us</h3>
+        <h3 class="tittle">Contacto</h3>
         <form action="#" method="post">
             <input type="text" name="Name" placeholder="Name" required="">
             <input class="email" type="text" name="Email" placeholder="Email" required="">

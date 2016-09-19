@@ -1,0 +1,58 @@
+seccion para las redes sociales
+diseño libre
+presentar propuestas
+parte de subscripcion al boletin de la pagina (noticias)(auth)
+
+secciones
+	home
+	quienes somos (descripcion de la empresa, vision, mision, objetivo)
+	contacto
+	paquetes
+	eventos
+	noticias
+
+diseño
+	Home
+		bootstrap
+		responsive
+		registro y login
+		banner/slider principal en el menu
+		seccion de ultimas noticias en el home(con enlace que lleve a las noticias)(primera noticias con imagenes)
+		listado de ultimos eventos
+		
+	paquetes
+		listado de destinos nacionales e internacionales
+		listado	de paquetes
+
+	estilo de paquete
+		Titulo
+		destino
+		Descripcion
+		fecha de disponibilidad
+		precio ( boton que te lleva a un formulario de contacto) (si no estas loggeado) (si estas loggeado te debe enviar a una seccion donde solo pones tus datos y pides el evento y valide de que no este ocupada la fecha para ese evento)(no se puede dos eventos del mismo tipo en un mismo dia)
+
+tipo de eventos
+	conferencias
+	Planes vacaciones
+	concierto
+	fiestas
+
+Contacto
+	nombre
+	apellido
+	motivo
+	email
+	telefono
+	comentarios
+
+evento secciones
+	eventos que vendran o participe
+	solicitud de cupo para evento 
+	cambiar estatus del evento (cuando termino)
+	
+	
+
+
+		
+	
+		
