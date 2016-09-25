@@ -25,7 +25,7 @@ class CreatePackagesTable extends Migration
             $table->timestamps('');
             $table->integer('users_id')->unsigned();
             $table->foreign('users_id')->references('id')->on('Usuarios');
-            $table->enum('status');
+            $table->enum('status',['m']);
         });
     }
 

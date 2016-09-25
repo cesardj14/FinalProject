@@ -13,7 +13,7 @@ class CreateSocialAccountsTable extends Migration
      */
     public function up()
     {
-        Schema::create('events_type', function (Blueprint $table) {
+        Schema::create('social_accounts', function (Blueprint $table) {
             $table->integer('users_id')->unsigned();
             $table->foreign('users_id')->references('id')->on('Usuarios');
             $table->integer('provider_user_id');

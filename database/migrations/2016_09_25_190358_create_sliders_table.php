@@ -17,7 +17,7 @@ class CreateSlidersTable extends Migration
             $table->increments('id');
             $table->string('url', 45);
             $table->string('images', 45);
-            $table->enum('status');
+            $table->enum('status',['m']);
             $table->integer('users_id')->unsigned();
             $table->foreign('users_id')->references('id')->on('Usuarios');
 

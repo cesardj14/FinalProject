@@ -22,8 +22,8 @@ class CreateEventsTable extends Migration
             $table->date('valid_from');
             $table->date('valid_to');
             $table->timestamps();
-            $table->enum('status');
-            $table->integer('users_id')->unsigned();
+            $table->enum('status',['m']);
+            $table->integer('users_id');
             $table->foreign('users_id')->references('id')->on('Usuarios');
         });
     }
