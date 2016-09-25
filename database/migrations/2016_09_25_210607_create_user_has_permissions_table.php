@@ -13,7 +13,7 @@ class CreateUserHasPermissionsTable extends Migration
      */
     public function up()
     {
-        Schema::create('news', function (Blueprint $table) {
+        Schema::create('user_has_permissions', function (Blueprint $table) {
             $table->integer('users_id')->unsigned();
             $table->foreign('users_id')->references('id')->on('Usuarios');
             $table->integer('permissions_id')->unsigned();

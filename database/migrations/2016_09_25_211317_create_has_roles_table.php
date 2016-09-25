@@ -13,7 +13,7 @@ class CreateHasRolesTable extends Migration
      */
     public function up()
     {
-        Schema::create('news', function (Blueprint $table) {
+        Schema::create('has_roles', function (Blueprint $table) {
             $table->integer('roles_id')->unsigned();
             $table->foreign('roles_id')->references('id')->on('roles');
             $table->integer('permissions_id')->unsigned();
