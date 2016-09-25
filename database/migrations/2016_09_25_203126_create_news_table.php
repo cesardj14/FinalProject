@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreatePackagesTable extends Migration
+class CreateNewsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,19 +13,16 @@ class CreatePackagesTable extends Migration
      */
     public function up()
     {
-        Schema::create('packages', function (Blueprint $table) {
-            $table->increments('id');
-            $table->string('title', 45);
-            $table->string('destiny', 45);
-            $table->text('description');
+        Schema::create('news', function (Blueprint $table) {
+            $table->integer('id');
+            $table->string('title', 100);
+            $table->string('resume', 255);
+            $table->text('content');
             $table->string('images', 45);
-            $table->integer('nro_tickets');
-            $table->date('valid_form');
-            $table->date('valid_to');
-            $table->timestamps('');
+            $table->string('date', 45);
+            $table->timestamps();
             $table->integer('users_id')->unsigned();
             $table->foreign('users_id')->references('id')->on('Usuarios');
-            $table->enum('status');
         });
     }
 
