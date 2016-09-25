@@ -28,6 +28,6 @@ class CreateHasRolesTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('has_roles');
     }
 }
