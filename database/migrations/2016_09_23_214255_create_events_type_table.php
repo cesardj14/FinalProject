@@ -26,6 +26,6 @@ class CreateEventsTypeTable extends Migration
      */
     public function down()
     {
-        //
+        Schema::drop('events_type');
     }
 }
