@@ -16,9 +16,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
          addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
 
     </script>
-    <link href="css/bootstrap.css" rel='stylesheet' type='text/css'/>
+    <link href="{{ asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css'/>
     <!-- Custom Theme files -->
-    <link href="css/iconeffects.css" rel='stylesheet' type='text/css'/>
+    <link href="{{ asset('css/iconeffects.css') }}" rel='stylesheet' type='text/css'/>
     <link href="css/style.css" rel='stylesheet' type='text/css'/>
     <link rel="stylesheet" href="css/swipebox.css">
     <script src="js/jquery-1.11.1.min.js"></script>
@@ -61,13 +61,15 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!--logo-->
                 <div class="logo">
                     <a href="{{ url('/') }}"><h1>TioVEN</h1></a>
+                    <a href="{{ url('/login') }}"><h4>Entrar</h4></a>
+                    <a href="{{ url('/register') }}"><h4>Registrar</h4></a>
                 </div>
                 <!--//logo-->
                 <div class="top-menu">
                     <span class="menu"> </span>
                     <nav class="link-effect-4" id="link-effect-4">
                         <ul>
-                            <li><a data-hover="Login" href="{{ url('/login') }}" class="scroll">Login</a></li>
+                            <li><a href="{{ url('/login') }}" class="scroll">Login</a></li>
                             <li class="active"><a data-hover="Inicio" href="{{ url('/') }}">Inicio</a></li>
                             <li><a data-hover="Nosotros" href="#about" class="scroll">Nosotros</a></li>
                             <li><a data-hover="Galeria" href="#gallery" class="scroll">Galeria</a></li>
