@@ -1,0 +1,108 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <title>TioVEN</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="keywords" content="Outdoors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design"/>
+    <script type="applisalonion/x-javascript">
+         addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
+
+    </script>
+    <link href="{{ asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css'/>
+    <!-- Custom Theme files -->
+    <link href="{{ asset('css/iconeffects.css') }}" rel='stylesheet' type='text/css'/>
+    <link href="css/style.css" rel='stylesheet' type='text/css'/>
+    <link rel="stylesheet" href="css/swipebox.css">
+    <script src="js/jquery-1.11.1.min.js"></script>
+    <script type="text/javascript" src="js/move-top.js"></script>
+    <script type="text/javascript" src="js/easing.js"></script>
+    <!--/web-font-->
+    <link href='//fonts.googleapis.com/css?family=PT+Sans:400,400italic,700,700italic' rel='stylesheet' type='text/css'>
+    <link href='//fonts.googleapis.com/css?family=Merriweather+Sans:400,300,700' rel='stylesheet' type='text/css'>
+    <!--/script-->
+    <script type="text/javascript">
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+                $('html,body').animate({scrollTop: $(this.hash).offset().top}, 900);
+            });
+        });
+    </script>
+    <!-- swipe box js -->
+    <script src="js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function ($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <!-- //swipe box js -->
+    <!--animate-->
+    <link href="css/animate.css" rel="stylesheet" type="text/css" media="all">
+    <script src="js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+
+</head>
+<body>
+<!--start-home-->
+<div class="banner" id="home">
+    <div class="header-bottom">
+        <div class="container">
+            <div class="fixed-header">
+                <!--logo-->
+                <div class="logo">
+                    <a href="{{ url('/') }}"><h1>TioVEN</h1></a>
+                    <a href="{{ url('/login') }}"><h4>Entrar</h4></a>
+                    <a href="{{ url('/register') }}"><h4>Registrar</h4></a>
+                </div>
+                <!--//logo-->
+                <div class="top-menu">
+                    <span class="menu"> </span>
+                    <nav class="link-effect-4" id="link-effect-4">
+                        <ul>
+                            <li><a href="{{ url('/login') }}" class="scroll">Login</a></li>
+                            <li class="active"><a data-hover="Inicio" href="{{ url('/') }}">Inicio</a></li>
+                            <li><a data-hover="Nosotros" href="#about" class="scroll">Nosotros</a></li>
+                            <li><a data-hover="Galeria" href="#gallery" class="scroll">Galeria</a></li>
+                            <li><a data-hover="Paquetes" href="#blogs" class="scroll">Paquetes</a></li>
+                            <li><a data-hover="Noticias" href="#services" class="scroll">Noticias</a></li>
+                            <li><a data-hover="Contacto" href="#contact" class="scroll">Contacto</a></li>
+
+                        </ul>
+                    </nav>
+                </div>
+                <!-- script-for-menu -->
+                <script>
+                    $("span.menu").click(function () {
+                        $(".top-menu ul").slideToggle("slow", function () {
+                        });
+                    });
+                </script>
+                <!-- script-for-menu -->
+
+                <div class="clearfix"></div>
+                <script>
+                    $(document).ready(function () {
+                        var navoffeset = $(".header-bottom").offset().top;
+                        $(window).scroll(function () {
+                            var scrollpos = $(window).scrollTop();
+                            if (scrollpos >= navoffeset) {
+                                $(".header-bottom").addClass("fixed");
+                            } else {
+                                $(".header-bottom").removeClass("fixed");
+                            }
+                        });
+
+                    });
+                </script>
+            </div>
+        </div>
+    </div>
+
+
+
+    </div>
+    </body>

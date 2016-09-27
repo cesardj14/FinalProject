@@ -15,6 +15,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <script type="applisalonion/x-javascript">
          addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
 
+
     </script>
     <link href="{{ asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css'/>
     <!-- Custom Theme files -->
@@ -61,21 +62,31 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!--logo-->
                 <div class="logo">
                     <a href="{{ url('/') }}"><h1>TioVEN</h1></a>
-                    <a href="{{ url('/login') }}"><h4>Entrar</h4></a>
-                    <a href="{{ url('/register') }}"><h4>Registrar</h4></a>
                 </div>
                 <!--//logo-->
                 <div class="top-menu">
                     <span class="menu"> </span>
                     <nav class="link-effect-4" id="link-effect-4">
                         <ul>
-                            <li><a href="{{ url('/login') }}" class="scroll">Login</a></li>
-                            <li class="active"><a data-hover="Inicio" href="{{ url('/') }}">Inicio</a></li>
                             <li><a data-hover="Nosotros" href="#about" class="scroll">Nosotros</a></li>
                             <li><a data-hover="Galeria" href="#gallery" class="scroll">Galeria</a></li>
                             <li><a data-hover="Paquetes" href="#blogs" class="scroll">Paquetes</a></li>
-                            <li><a data-hover="Noticias" href="#services" class="scroll">Noticias</a></li>
+                            <li><a data-hover="Eventos" href="#services" class="scroll">Eventos</a></li>
+                            <li><a data-hover="Noticias" href="#review" class="scroll">Noticias</a></li>
                             <li><a data-hover="Contacto" href="#contact" class="scroll">Contacto</a></li>
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        Mi Cuenta
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                        <li><a href="{{ url('/login') }}">Login</a></li>
+                                        <li><a href="{{ url('/register') }}">Registrarse</a></li>
+                                    </ul>
+                                </div>
+                            </li>
 
                         </ul>
                     </nav>
@@ -121,8 +132,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <ul class="social wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
                 <li><a href="#" class="tw"></a></li>
                 <li><a href="#" class="fb"> </a></li>
-                <li><a href="#" class="in"> </a></li>
-                <li><a href="#" class="dott"></a></li>
                 <div class="clearfix"></div>
             </ul>
         </div>
@@ -323,11 +332,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!--Blogs -->
 <div class="blogs" id="blogs">
     <div class="container">
-        <h3 class="tittle">Paquetes</h3>
+        <h3 class="tittle"><a href="{{ url('/paquetes') }}">Paquetes</a></h3>
         <p class="wel-text wow fadeInDown" data-wow-duration=".8s" data-wow-delay=".4s">Conoce nuestra variedad de
             paquetes que disponemos para nuestros distinguidos miembros.</p>
         <div class="inst-grids">
-            <a href="single.html">
+            <a href="{{ url('/paquetesn') }}">
                 <div class="col-md-4 blog-gd-w3ls">
                     <img src="images/b1.jpg">
                     <div class="date-w3">
@@ -338,7 +347,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="{{ url('/paquetesi') }}">
                 <div class="col-md-4 blog-gd-w3ls">
                     <img src="images/b2.jpg">
                     <div class="date-w3">
@@ -349,14 +358,20 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     </div>
                 </div>
             </a>
-            <a href="#">
+            <a href="{{ url('/paquetes') }}">
                 <div class="col-md-4 blog-gd-w3ls">
                     <img src="images/b3.jpg">
                     <div class="date-w3">
-                        <h4><span class="big">23 </span>JUNE</h4>
+                        <h4><span class="big"></span>Listado de Paquetes
+                            <ul>
+                                <li>Paris</li>
+                                <li>El salto angel</li>
+                                <li>Merida</li>
+                                <li>Kuala Lumpur</li>
+                            </ul></h4>
                     </div>
                     <div class="blog-description-w3agile">
-                        <h5 style="text-shadow: black 5px 5px 5px;">Contrary to popular belief</h5>
+
                     </div>
                 </div>
             </a>
@@ -372,7 +387,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <!-- services -->
 <div class="service" id="services">
     <div class="container">
-        <h3  class="tittle"><a data-hover="Eventos" href="#" class="scroll">Eventos</a></h3>
+        <h3 class="tittle"><a data-hover="Eventos" href="{{ url('/eventos') }}">Eventos</a></h3>
         <div class="inst-grids">
             <div class="col-md-6 services-gd sgd1 text-center wow slideInLeft" data-wow-duration="1s"
                  data-wow-delay=".3s">
@@ -429,7 +444,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <div id="review" class="reviews">
 
     <div class="test-monials">
-        <h3 class="tittle">Noticias</h3>
+        <h3 class="tittle"><a href="{{ url('/news') }}">Noticias</a></h3>
         <!--//screen-gallery-->
         <div class="sreen-gallery-cursual">
             <!-- required-js-files-->
@@ -512,6 +527,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <h3 class="tittle">Contacto</h3>
         <form action="#" method="post">
             <input type="text" name="Name" placeholder="Nombre" required="">
+            <input type="text" name="Last Name" placeholder="Apellido" required="">
             <input class="email" type="text" name="Email" placeholder="Email" required="">
             <input class="subject" type="text" name="subject" placeholder="Telefono" required="">
             <textarea placeholder="Mensaje" name="Message" required=""></textarea>
@@ -584,10 +600,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <p class="copy-right wow fadeInUp" data-wow-duration="1s" data-wow-delay=".3s">&copy; 2016 TioVEN . Todos los
             derechos reservados | Design by <a href="http://w3layouts.com">W3layouts</a></p>
         <ul class="social wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
-            <li><a href="#" class="tw"></a></li>
             <li><a href="#" class="fb"> </a></li>
-            <li><a href="#" class="in"> </a></li>
-            <li><a href="#" class="dott"></a></li>
+            <li><a href="#" class="tw"></a></li>
             <div class="clearfix"></div>
         </ul>
     </div>
