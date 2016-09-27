@@ -53,4 +53,7 @@ Route::post('contact', 'ContactController@sendContactInfo');
 
 
 
+
+Route::resource('/paquetes', 'PaquetesController');
+
 Route::get('/home', 'HomeController@index');
