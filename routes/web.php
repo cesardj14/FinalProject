@@ -46,6 +46,11 @@ Route::get('/cotizacion',function(){
     return view('cotizacion');
 });
 
+Route::get('my-test-mail','HomeController@myTestMail');
+
+$router->get('contact', 'ContactController@showForm');
+Route::post('contact', 'ContactController@sendContactInfo');
+
 
 
 Route::get('/home', 'HomeController@index');

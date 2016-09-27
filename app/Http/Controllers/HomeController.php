@@ -25,4 +25,14 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
+    public function myTestMail()
+    {
+        $myEmail = 'dejonghcesar@gmail.com';
+        Mail::to($myEmail)->send(new MyTestMail());
+
+
+        dd("Mail Send Successfully");
+    }
+
 }
