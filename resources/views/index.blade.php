@@ -16,6 +16,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
          addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
 
 
+
+
     </script>
     <link href="{{ asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css'/>
     <!-- Custom Theme files -->
@@ -74,6 +76,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li><a data-hover="Eventos" href="#services" class="scroll">Eventos</a></li>
                             <li><a data-hover="Noticias" href="#review" class="scroll">Noticias</a></li>
                             <li><a data-hover="Contacto" href="#contact" class="scroll">Contacto</a></li>
+                            @if (Auth::guest())
                             <li>
                                 <div class="dropdown">
                                     <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
@@ -81,12 +84,35 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         Mi Cuenta
                                         <span class="caret"></span>
                                     </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="font: black;">
                                         <li><a href="{{ url('/login') }}">Login</a></li>
                                         <li><a href="{{ url('/register') }}">Registrarse</a></li>
                                     </ul>
                                 </div>
                             </li>
+                                @else
+                            <li>
+                                <div class="dropdown">
+                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                        {{ Auth::user()->name }}
+                                        <span class="caret"></span>
+                                    </button>
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="font: black;">
+                                        <li><a href="{{ url('/logout') }}"
+                                               onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                                Salir
+                                            </a>
+
+                                            <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                                {{ csrf_field() }}
+                                            </form></li>
+
+                                    </ul>
+                                </div>
+                            </li>
+                            @endif
 
                         </ul>
                     </nav>
@@ -127,8 +153,24 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     <div class="container">
         <div class="col-md-7 about-left">
             <h3 class="tittle">Viajes TioVEN</h3>
-            <p class="agile">Informacion de la empresa.</p>
-            <p>Informacion 2 de la empresa</p>
+            <p class="agile">30 años trabajando para ofrecer servicios de alta calidad técnica y humana, en las áreas de
+                Turismo, Recreación, Cultura, Deporte y Entretenimiento. En ese periodo, han sido numerosas las personas
+                y organizaciones que han confiado en los servicios que prestamos, en nuestro personal y en la
+                profesionalidad de nuestra empresa; por ello el compromiso que mantenemos con la calidad, la excelencia
+                y el buen servicio, brindando los más novedosos programas que permiten satisfacer las necesidades y
+                gustos de nuestros distinguidos clientes. Se fundó en Caracas, inicialmente con el objetivo de
+                promocionar en el mercado escolar con diferentes destinos turísticos, recreativos y culturales,
+                desarrollando posteriormente una intensa actividad en el área de Turismo, Eventos Corporativos,
+                Culturales y Deportivos, somos pionera en la Organización y Desarrollo de planes Vacacionales,
+                Campamentos, Programas de recreación para jubilados y tercera edad entre otros.
+                Nuestra organización se encuentra ubicada en Caracas, Venezuela y cuenta con el Recurso Humano y
+                Logístico para realizar sus actividades en el ámbito nacional e internacional. A lo largo de las TRES
+                DÉCADAS de trayectoria, TIO VEN ha logrado conformar una sólida organización con un equipo de excelentes
+                profesionales, creando empleos directos e indirectos y actividades conexas al servicio liderando el
+                mercado nacional de Planes Vacacionales y logrando una importante presencia en el mercado turístico
+                infantil, juvenil y adulto nacional, así como en la Organización y Desarrollo de Eventos Corporativos,
+                familiares y Particulares.
+                .</p>
             <ul class="social wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
                 <li><a href="#" class="tw"></a></li>
                 <li><a href="#" class="fb"> </a></li>
@@ -143,8 +185,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="col-md-11 about-right-text">
                     <h4>Mision</h4>
-                    <p>Duis eleifend, quam hendrerit luctus malesuada, erat odio eleifend urna, sed iaculis risus mauris
-                        at dui. Proin porttitor nibh sit amet lacinia ullamcorper</p>
+                    <p>Incentivar, promover, fomentar y desarrollar Turismo Nacional e Internacional, mostrando al mundo
+                        nuestras maravillas, mediante una importante distribución en Venezuela y El Mundo.
+                        TIO VEN llega a miles de usuarios a través de sus múltiples servicios turísticos , deportivos,
+                        recreativos y culturales, transformándose en la primera empresa del sector Turismo que ofrece a
+                        sus clientes la calidad, seguridad y satisfacción de gustos y necesidades a lo largo y ancho del
+                        territorio nacional.
+                    </p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -154,8 +201,18 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="col-md-11 about-right-text">
                     <h4>Vision</h4>
-                    <p>Duis eleifend, quam hendrerit luctus malesuada, erat odio eleifend urna, sed iaculis risus mauris
-                        at dui. Proin porttitor nibh sit amet lacinia ullamcorper</p>
+                    <p>Ser una empresa multiservicios de referencia pensada por Venezolanos (as) para Venezuela y El
+                        Mundo, orientada para fomentar y fortalecer el:
+                    <ul>
+                        <li>Turismo</li>
+                        <li>Deporte</li>
+                        <li>Recreacion</li>
+                        <li>Cultura</li>
+                    </ul>
+                    Mediante el desarrollo y la difusión de innovadores programas, productos y servicios, orientados a
+                    la elevación de la calidad de vida del venezolano, exaltando y concientizando los valores y
+                    tradiciones autóctonas del país.
+                    </p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -165,8 +222,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
                 <div class="col-md-11 about-right-text">
                     <h4>Objetivo</h4>
-                    <p>Duis eleifend, quam hendrerit luctus malesuada, erat odio eleifend urna, sed iaculis risus mauris
-                        at dui. Proin porttitor nibh sit amet lacinia ullamcorper</p>
+                    <p>El éxito de la empresa se basa en la planificación, promoción y desarrollo de excelentes
+                        productos y servicios turísticos, recreativos, culturales y deportivos a nivel nacional e
+                        internacional, donde la calidad, flexibilización, sensibilización por los aspectos
+                        medioambientales, la individualización y satisfacción de gustos y necesidades adquieren mayor
+                        importante; apreciándose así que competitividad de la empresa no reside solo en el factor
+                        precio, sino en la innovación, creación y desarrollo de nuevos productos, para conseguir la
+                        plena satisfacción del cliente con el fin de fidelizarlo.</p>
                 </div>
                 <div class="clearfix"></div>
             </div>
@@ -337,8 +399,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             paquetes que disponemos para nuestros distinguidos miembros.</p>
         <div class="inst-grids">
             <a href="{{ url('/paquetesn') }}">
-                <div class="col-md-4 blog-gd-w3ls">
-                    <img src="images/b1.jpg">
+                <div class="col-md-6 blog-gd-w3ls">
+                    <img src="images/my2.jpg">
                     <div class="date-w3">
                         <h4>Paquetes Nacionales</h4>
                     </div>
@@ -348,30 +410,13 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 </div>
             </a>
             <a href="{{ url('/paquetesi') }}">
-                <div class="col-md-4 blog-gd-w3ls">
+                <div class="col-md-6 blog-gd-w3ls">
                     <img src="images/b2.jpg">
                     <div class="date-w3">
                         <h4>Paquetes Internacionales</h4>
                     </div>
                     <div class="blog-description-w3agile">
                         <h5 style="text-shadow: black 5px 5px 5px;">Conoce nuestros paquetes internacionales</h5>
-                    </div>
-                </div>
-            </a>
-            <a href="{{ url('/paquetes') }}">
-                <div class="col-md-4 blog-gd-w3ls">
-                    <img src="images/b3.jpg">
-                    <div class="date-w3">
-                        <h4><span class="big"></span>Listado de Paquetes
-                            <ul>
-                                <li>Paris</li>
-                                <li>El salto angel</li>
-                                <li>Merida</li>
-                                <li>Kuala Lumpur</li>
-                            </ul></h4>
-                    </div>
-                    <div class="blog-description-w3agile">
-
                     </div>
                 </div>
             </a>
@@ -528,8 +573,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <form action="#" method="post">
             <input type="text" name="Name" placeholder="Nombre" required="">
             <input type="text" name="Last Name" placeholder="Apellido" required="">
+            <input type="tel" name="Telephone" placeholder="Telefono" required="">
             <input class="email" type="text" name="Email" placeholder="Email" required="">
-            <input class="subject" type="text" name="subject" placeholder="Telefono" required="">
+            <input class="text" type="text" name="Motive" placeholder="Motivo" required="">
             <textarea placeholder="Mensaje" name="Message" required=""></textarea>
             <p class="form-submit wow shake" data-wow-duration="1s" data-wow-delay=".3s">
                 <input name="submit" type="submit" id="submit" value="SEND">
@@ -606,6 +652,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </ul>
     </div>
 </div>
+
+
 <!--start-smooth-scrolling-->
 <script type="text/javascript">
     $(document).ready(function () {
@@ -626,5 +674,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <a href="#home" id="toTop" class="scroll" style="display: block;"> <span id="toTopHover"
                                                                          style="opacity: 1;"> </span></a>
 <script src="js/bootstrap.min.js"></script>
+
+
 </body>
 </html>
