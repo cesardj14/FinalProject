@@ -80,9 +80,11 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         Mi Cuenta
                                         <span class="caret"></span>
                                     </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="font: black;">
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <li><a href="{{ url('/login') }}">Login</a></li>
                                         <li><a href="{{ url('/register') }}">Registrarse</a></li>
+                                        <li><a href="{{ url('auth/twitter') }}">Iniciar sesion con twitter</a></li>
+
                                     </ul>
                                 </div>
                             </li>

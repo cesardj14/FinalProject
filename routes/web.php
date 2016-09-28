@@ -46,6 +46,12 @@ Route::get('/cotizacion',function(){
     return view('cotizacion');
 });
 
+Route::get('twitter', function () {
+    return view('twitterAuth');
+});
+Route::get('auth/twitter', 'Auth\RegisterController@redirectToTwitter');
+Route::get('auth/twitter/callback', 'Auth\RegisterController@handleTwitterCallback');
+
 Route::get('my-test-mail','HomeController@myTestMail');
 
 $router->get('contact', 'ContactController@showForm');
