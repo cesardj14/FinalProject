@@ -27,7 +27,7 @@ class PaquetesController extends Controller
     public function index()
     {
         if(Auth::user()->hasRole('Administrador')){
-            return view('paquetes');
+            return view('paquetes.index');
         }elseif(Auth::user()->hasRole('Cliente')){
             return view('index');
         }else{

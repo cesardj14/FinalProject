@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "b14f2c737aedce966a523ad8e6e86382",
+    "hash": "08a3308394c3f71b991dfe1034e1dfbf",
     "content-hash": "5ba372f1d3b6eac93120e96a562ecc30",
     "packages": [
         {
@@ -479,16 +479,16 @@
         },
         {
             "name": "laravel/framework",
-            "version": "v5.3.10",
+            "version": "v5.3.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/laravel/framework.git",
-                "reference": "6febb0ee61999cde3bc7b2963c8903032bb22691"
+                "reference": "960425aac9909ac7f4e4338919f7a187d20fa0ce"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/laravel/framework/zipball/6febb0ee61999cde3bc7b2963c8903032bb22691",
-                "reference": "6febb0ee61999cde3bc7b2963c8903032bb22691",
+                "url": "https://api.github.com/repos/laravel/framework/zipball/960425aac9909ac7f4e4338919f7a187d20fa0ce",
+                "reference": "960425aac9909ac7f4e4338919f7a187d20fa0ce",
                 "shasum": ""
             },
             "require": {
@@ -603,7 +603,7 @@
                 "framework",
                 "laravel"
             ],
-            "time": "2016-09-20 13:46:16"
+            "time": "2016-09-29 19:30:55"
         },
         {
             "name": "laravel/socialite",
