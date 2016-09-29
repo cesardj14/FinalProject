@@ -3,9 +3,13 @@
 namespace App\Http\Controllers\Auth;
 
 use App\User;
+use Illuminate\Foundation\Auth\ThrottlesLogins;
 use Validator;
 use App\Http\Controllers\Controller;
 use Illuminate\Foundation\Auth\RegistersUsers;
+use Socialite;
+use Auth;
+use Exception;
 
 class RegisterController extends Controller
 {
@@ -20,7 +24,7 @@ class RegisterController extends Controller
     |
     */
 
-    use RegistersUsers;
+    use RegistersUsers, ThrottlesLogins;
 
     /**
      * Where to redirect users after login / registration.
@@ -62,10 +66,45 @@ class RegisterController extends Controller
      */
     protected function create(array $data)
     {
-        return User::create([
+        $user = User::create([
             'name' => $data['name'],
             'email' => $data['email'],
             'password' => bcrypt($data['password']),
         ]);
+
+       /* $user->assignRole('Cliente');
+
+        return $user;
+       */
     }
+
+    public function redirectToTwitter()
+    {
+        return Socialite::driver('twitter')->redirect();
+    }
+
+    public function redirectToFacebook()
+    {
+        return Socialite::driver('facebook')->redirect();
+    }
+
+    public function handleTwitterCallback()
+    {
+        try {
+            $user = Socialite::driver('twitter')->user();
+            $create['name'] = $user->name;
+            $create['email'] = $user->email;
+            $create['twitter_id'] = $user->id;
+
+
+            $userModel = new User;
+            $createdUser = $userModel->addNew($create);
+            Auth::loginUsingId($createdUser->id);
+            return redirect()->route('home');
+        } catch (Exception $e) {
+            return redirect('auth/twitter');
+        }
+    }
+
+
 }

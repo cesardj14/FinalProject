@@ -14,10 +14,6 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design"/>
     <script type="applisalonion/x-javascript">
          addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); }
-
-
-
-
     </script>
     <link href="{{ asset('css/bootstrap.css') }}" rel='stylesheet' type='text/css'/>
     <!-- Custom Theme files -->
@@ -84,9 +80,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                         Mi Cuenta
                                         <span class="caret"></span>
                                     </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="font: black;">
+                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <li><a href="{{ url('/login') }}">Login</a></li>
                                         <li><a href="{{ url('/register') }}">Registrarse</a></li>
+                                        <li><a href="{{ url('redirect/twitter') }}">Iniciar sesion con twitter</a></li>
+                                        <li><a href="{{ url('redirect/facebook') }}">Iniciar sesion con facebook</a></li>
+
                                     </ul>
                                 </div>
                             </li>

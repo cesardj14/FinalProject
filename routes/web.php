@@ -46,11 +46,26 @@ Route::get('/cotizacion',function(){
     return view('cotizacion');
 });
 
+Route::get('twitter', function () {
+    return view('twitterAuth');
+});
+
+Route::get('user/activation/{token}', 'Auth\AuthController@activateUser')->name('user.activate');
+
+
+
+Route::get('/redirect/{provider}', 'SocialAuthController@redirect');
+Route::get('/callback/{provider}', 'SocialAuthController@callback');
+
+
 Route::get('my-test-mail','HomeController@myTestMail');
 
 $router->get('contact', 'ContactController@showForm');
 Route::post('contact', 'ContactController@sendContactInfo');
 
 
+
+
+Route::resource('/paquetes', 'PaquetesController');
 
 Route::get('/home', 'HomeController@index');
