@@ -74,8 +74,10 @@ class RegisterController extends Controller
 
        /* $user->assignRole('Cliente');
 
-        return $user;
        */
+
+        return $user;
+
     }
 
     public function redirectToTwitter()
