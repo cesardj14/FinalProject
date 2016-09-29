@@ -73,19 +73,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li><a data-hover="Noticias" href="#review" class="scroll">Noticias</a></li>
                             <li><a data-hover="Contacto" href="#contact" class="scroll">Contacto</a></li>
                             @if (Auth::guest())
-                            <li>
-                                <div class="dropdown">
-                                    <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
-                                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-                                        Mi Cuenta
-                                        <span class="caret"></span>
-                                    </button>
-                                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="font: black;">
-                                        <li><a href="{{ url('/login') }}">Login</a></li>
-                                        <li><a href="{{ url('/register') }}">Registrarse</a></li>
-                                    </ul>
-                                </div>
-                            </li>
+                            <li><a data-hover="Registrarse" href="{{ url('/register') }}">Registrarse</a></li>
                                 @else
                             <li>
                                 <div class="dropdown">

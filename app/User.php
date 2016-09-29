@@ -4,12 +4,12 @@ namespace App;
 
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
-use Spatie\Permission\Traits\HasRoles;
+/*use Spatie\Permission\Traits\HasRoles;*/
 
 class User extends Authenticatable
 {
     use Notifiable;
-    use HasRoles;
+    /*use HasRoles;*/
 
     /**
      * The attributes that are mass assignable.
@@ -20,6 +20,7 @@ class User extends Authenticatable
         'name', 'email', 'password',
     ];
 
+
     /**
      * The attributes that should be hidden for arrays.
      *
@@ -28,4 +29,17 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
+
+    public function addNew($input)
+    {
+        $check = static::where('twitter_id',$input['twitter_id'])->first();
+
+        if(is_null($check)){
+            return static::create($input);
+        }
+
+        return $check;
+    }
+
+
 }

@@ -62,12 +62,13 @@ Route::get('/planes',function(){
     return view('planes');
 });
 
-Route::get('my-test-mail','HomeController@myTestMail');
+Route::get('twitter', function () {
+    return view('twitterAuth');
+});
 
-$router->get('contact', 'ContactController@showForm');
-Route::post('contact', 'ContactController@sendContactInfo');
 
-
+Route::get('/redirect/{provider}', 'SocialAuthController@redirect');
+Route::get('/callback/{provider}', 'SocialAuthController@callback');
 
 
 Route::resource('/paquetes', 'PaquetesController');
