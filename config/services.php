@@ -36,9 +36,16 @@ return [
     ],
 
     'twitter' => [
-        'client_id' => 'YXUvEnqKvYpOmy9Uk9CE78LtR',
-        'client_secret' => '8x0qyffeM2a9AkctdQ6RoO5wqoSICfYDzZxDuataIZN1uJsqAq',
+        'client_id' => 'rU6dDl3JZonZ5o41brSN4wdQO',
+        'client_secret' => '6l0hSxJy5OfCSJfQcHo5VGW1MMNUk6vVAelEhjyf4OLPJdHLwB',
         'redirect' => 'http://localhost:8000/callback/twitter',
+    ],
+
+    'facebook' => [
+        'client_id' => '1194265993950590',
+        'client_secret' => 'd5814fe9b8e549dc6400ad9f184b613b',
+        'redirect' => 'http://localhost:8000/callback/facebook',
+
     ],
 
 ];

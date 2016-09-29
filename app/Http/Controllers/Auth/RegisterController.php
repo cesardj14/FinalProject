@@ -72,14 +72,20 @@ class RegisterController extends Controller
             'password' => bcrypt($data['password']),
         ]);
 
-        $user->assignRole('Cliente');
+       /* $user->assignRole('Cliente');
 
         return $user;
+       */
     }
 
     public function redirectToTwitter()
     {
         return Socialite::driver('twitter')->redirect();
+    }
+
+    public function redirectToFacebook()
+    {
+        return Socialite::driver('facebook')->redirect();
     }
 
     public function handleTwitterCallback()
@@ -89,6 +95,7 @@ class RegisterController extends Controller
             $create['name'] = $user->name;
             $create['email'] = $user->email;
             $create['twitter_id'] = $user->id;
+
 
             $userModel = new User;
             $createdUser = $userModel->addNew($create);

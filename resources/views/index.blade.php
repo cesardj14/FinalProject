@@ -83,7 +83,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                                         <li><a href="{{ url('/login') }}">Login</a></li>
                                         <li><a href="{{ url('/register') }}">Registrarse</a></li>
-                                        <li><a href="{{ url('auth/twitter') }}">Iniciar sesion con twitter</a></li>
+                                        <li><a href="{{ url('redirect/twitter') }}">Iniciar sesion con twitter</a></li>
+                                        <li><a href="{{ url('redirect/facebook') }}">Iniciar sesion con facebook</a></li>
 
                                     </ul>
                                 </div>
