@@ -42,8 +42,24 @@ Route::get('/eventos',function(){
     return view('eventos');
 });
 
-Route::get('/cotizacion',function(){
-    return view('cotizacion');
+Route::get('/cotizar',function(){
+    return view('cotizar');
+});
+
+Route::get('/conciertos',function(){
+    return view('conciertos');
+});
+
+Route::get('/conferencias',function(){
+    return view('conferencias');
+});
+
+Route::get('/fiestas',function(){
+    return view('fiestas');
+});
+
+Route::get('/planes',function(){
+    return view('planes');
 });
 
 Route::get('my-test-mail','HomeController@myTestMail');

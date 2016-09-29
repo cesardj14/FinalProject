@@ -51,14 +51,17 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="fixed-header">
                 <!--logo-->
                 <div class="logo">
-                    <h1><span>Paquetes</span></h1>
+                    <div class="logo">
+                        <a href="#"><h1><span>Paquetes</span></h1></a>
+                    </div>
                 </div>
                 <!--//logo-->
                 <div class="top-menu">
                     <span class="menu"> </span>
                     <nav class="link-effect-4" id="link-effect-4">
                         <ul>
-                            <li class="active"><a data-hover="home" href="{{ url('/')  }}">home</a></li>
+                            <li class="active"><a data-hover="Home" href="{{ url('/')  }}">Home</a></li>
+                            <li class="active"><a data-hover="Internacionales" href="{{ url('/paquetesi')  }}">Internacionales</a></li>
 
                         </ul>
                     </nav>
@@ -93,56 +96,104 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 
 <!--blog-section-->
-<div class="blog-section">
-    <div class="container">
-        <h2 class="single">Nacionales</h2>
-        <div class="blog-top">
-            <div class="blog-single">
-                <div class="single-img">
-                    <a href="#">
-                        <img src="images/banner.jpg" alt="">
-                    </a>
-                    <h3 class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s">Todos sus viajes nacionales a un clik de distancia</h3>
+<div class="row">
 
-                    <p Class="wow slideInUp"  data-wow-duration="1s" data-wow-delay=".3s">Aqui podras encontrar todos los datos sobre nuestros paquetes nacionales perfectos para ti.</p>
-                </div>
+    <div class="col-sm-4 col-lg-4 col-md-4" >
+        <div class="thumbnail">
+            <img src="images/my1.jpg" alt="">
+            <div class="caption">
+                <h4 class="pull-right">$24.99</h4>
+                <h4><a href="#">Un coño</a>
+                </h4>
+                <p>prueba</p>
+                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
+                    Cotizar
+                </button>
             </div>
-        </div>
-    </div>
-</div>
 
+        </div>
+    </div>
 
-<div class="row" style="margin-left: 30px">
-    <div class="col-sm-6 col-md-4">
+    <div class="col-sm-4 col-lg-4 col-md-4">
         <div class="thumbnail">
-            <img src="images/b1.jpg" alt="...">
+            <img src="images/my1.jpg" alt="">
             <div class="caption">
-                <h3>Merida</h3>
-                <p>Ciudad fria pal cono</p>
-                <p><a href="#" class="btn btn-primary" role="button">Cotizar</a></p>
+                <h4 class="pull-right">$24.99</h4>
+                <h4><a href="#">Un coño</a>
+                </h4>
+                <p>prueba</p>
+                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
+                    Cotizar
+                </button>
             </div>
+
         </div>
     </div>
-    <div class="col-sm-6 col-md-4">
+
+    <div class="col-sm-4 col-lg-4 col-md-4">
         <div class="thumbnail">
-            <img src="images/b2.jpg" alt="...">
+            <img src="images/my1.jpg" alt="">
             <div class="caption">
-                <h3>Nose</h3>
-                <p>Tampoco se</p>
-                <p><a href="#" class="btn btn-primary" role="button">Cotizar</a></p>
+                <h4 class="pull-right">$24.99</h4>
+                <h4><a href="#">Un coño</a>
+                </h4>
+                <p>prueba</p>
+                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
+                    Cotizar
+                </button>
             </div>
+
         </div>
     </div>
-    <div class="col-sm-6 col-md-4">
+
+    <div class="col-sm-4 col-lg-4 col-md-4">
         <div class="thumbnail">
-            <img src="images/my3.jpg" alt="...">
+            <img src="images/my1.jpg" alt="">
             <div class="caption">
-                <h3>Punta Cana</h3>
-                <p>Ciudad fria pal cono</p>
-                <p><a href="#" class="btn btn-primary" role="button">Cotizar</a></p>
+                <h4 class="pull-right">$24.99</h4>
+                <h4><a href="#">Un coño</a>
+                </h4>
+                <p>prueba</p>
+                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
+                    Cotizar
+                </button>
             </div>
+
         </div>
     </div>
+
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="images/my1.jpg" alt="">
+            <div class="caption">
+                <h4 class="pull-right">$24.99</h4>
+                <h4><a href="#">Un coño</a>
+                </h4>
+                <p>prueba</p>
+                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
+                    Cotizar
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="images/my1.jpg" alt="">
+            <div class="caption">
+                <h4 class="pull-right">$24.99</h4>
+                <h4><a href="#">Un coño</a>
+                </h4>
+                <p>prueba</p>
+                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
+                    Cotizar
+                </button>
+            </div>
+
+        </div>
+    </div>
+
 </div>
 
 

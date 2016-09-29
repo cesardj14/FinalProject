@@ -433,7 +433,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-6 services-gd sgd1 text-center wow slideInLeft" data-wow-duration="1s"
                  data-wow-delay=".3s">
                 <div class=" col-md-2 hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-                    <a href="#" class="hi-icon"><img src="images/serve1.png"></a>
+                    <a href="{{ url('/conferencias') }}" class="hi-icon"><img src="images/serve1.png"></a>
                 </div>
                 <div class="col-md-10 serv-text">
                     <h4>Conferencias</h4>
@@ -444,7 +444,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-6 services-gd sgd2 text-center wow slideInLeft" data-wow-duration="1s"
                  data-wow-delay=".3s">
                 <div class=" col-md-2 hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-                    <a href="#" class="hi-icon"><img src="images/serve2.png"></a>
+                    <a href="{{ url('/planesv') }}" class="hi-icon"><img src="images/serve2.png"></a>
                 </div>
                 <div class="col-md-10 serv-text">
                     <h4>Planes Vacacionales</h4>
@@ -454,7 +454,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
             <div class="col-md-6 services-gd text-center wow slideInLeft" data-wow-duration="1s" data-wow-delay=".3s">
                 <div class=" col-md-2 hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-                    <a href="#" class="hi-icon"><img src="images/serve3.png"></a>
+                    <a href="{{ url('/conciertos') }}" class="hi-icon"><img src="images/serve3.png"></a>
                 </div>
                 <div class="col-md-10 serv-text">
                     <h4>Conciertos</h4>
@@ -465,7 +465,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <div class="col-md-6 services-gd services-gd4 text-center wow slideInLeft" data-wow-duration="1s"
                  data-wow-delay=".3s">
                 <div class=" col-md-2 hi-icon-wrap hi-icon-effect-9 hi-icon-effect-9a">
-                    <a href="#" class="hi-icon"><img src="images/serve4.png"></a>
+                    <a href="{{ url('/fiestas') }}" class="hi-icon"><img src="images/serve4.png"></a>
                 </div>
                 <div class="col-md-10 serv-text">
                     <h4>Fiestas</h4>
