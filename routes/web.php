@@ -58,8 +58,8 @@ Route::get('/fiestas',function(){
     return view('fiestas');
 });
 
-Route::get('/planes',function(){
-    return view('planes');
+Route::get('/planesv',function(){
+    return view('planesv');
 });
 
 Route::get('twitter', function () {
