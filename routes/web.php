@@ -26,9 +26,6 @@ Route::get('/paquetesi',function(){
     return view('paquetesi');
 });
 
-Route::get('/paquetes',function(){
-    return view('paquetes');
-});
 
 Route::get('/eventos',function(){
     return view('eventos');

@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="col-sm-8 col-sm-offset-2">
-        <form action="{{ url('/paquetes.index') }}" class="form-horizontal" role="form" method="POST" enctype="multipart/form-data">
+        <form action="{{ url('/paquetes') }}" class="form-horizontal" role="form" method="POST" enctype="multipart/form-data">
             {!! method_field('POST') !!}
             {!! csrf_field() !!}
             @include('paquetes.partials.form')

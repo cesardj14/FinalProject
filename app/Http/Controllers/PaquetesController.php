@@ -7,6 +7,7 @@ use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Auth;
+use Validator;
 
 class PaquetesController extends Controller
 {
@@ -29,7 +30,7 @@ class PaquetesController extends Controller
     {
 
         if(Auth::user()->hasRole('Administrador')){
-            return view('paquetes.index');
+            return view('/paquetes.index');
         }elseif(Auth::user()->hasRole('Cliente')){
             return view('index');
         }else{
@@ -71,7 +72,7 @@ class PaquetesController extends Controller
             'title' => $request->input('title'),
         ]);
 
-        return redirect('paquetes.index');
+        return redirect('paquetes');
     }
 
     /**
