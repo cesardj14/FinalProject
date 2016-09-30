@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<html id="paquetesn">
+<html>
 <head>
     <title>Outdoors a Travel Category  Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
