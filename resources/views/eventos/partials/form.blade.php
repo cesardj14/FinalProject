@@ -3,6 +3,14 @@
     <input type="text" class="form-control" id="title" name="title" placeholder="Titulo del evento"
            value="{{ $event->title or old('title') }}">
     <br>
+    $table->string('name_events_type')
+{{--
+    <label for="valid_from"><strong>Valido desde: </strong></label>
+    <input type="" class="form-control" id="valid_from" name="valid_from" placeholder="Valido desde..."
+           value="{{ $event->valid_from or old('valid_from') }}">
+           establecer tipo de evento....
+--}}
+    <br>
 
     <label for="description"><strong>Descripcion: </strong></label>
     <input type="text" class="form-control" id="description" name="description" placeholder="Descripcion del evento"
