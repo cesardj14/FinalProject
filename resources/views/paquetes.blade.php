@@ -121,7 +121,7 @@ $(document).ready(function() {
                 <h4><a href="#">Un coño</a>
                 </h4>
                 <p>prueba</p>
-                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
+                <button type="button" class="btn btn-default" href="{{ url('/cotizar')  }}" style="background:royalblue; color: white;">
         Cotizar
                 </button>
             </div>
