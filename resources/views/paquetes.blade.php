@@ -55,12 +55,32 @@ new WOW().init();
                         <ul>
                             <li class="active"><a data-hover="Home" href="{{ url('/')  }}">Home</a></li>
                             <li class="active"><a data-hover="Eventos" href="{{ url('/eventos')  }}">Eventos</a></li>
-                            <li class="active"><a data-hover="Login" href="{{ url('/login')  }}">Login</a></li>
-                            <li class="active"><a data-hover="Register" href="{{ url('/register')  }}">Register</a></li>
+                            @if (Auth::guest())
+                                <li><a data-hover="Registrarse" href="{{ url('/register') }}">Registrarse</a></li>
+                                <li><a data-hover="Login" href="{{ url('/login') }}">Login</a></li>
+                            @else
+                                <li>
+                                    <div class="dropdown">
+                                        <button class="btn btn-default dropdown-toggle" type="button" id="dropdownMenu1"
+                                                data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+                                            {{ Auth::user()->name }}
+                                            <span class="caret"></span>
+                                        </button>
+                                        <ul class="dropdown-menu" aria-labelledby="dropdownMenu1" style="font: black;">
+                                            <li><a href="{{ url('/logout') }}"
+                                                   onclick="event.preventDefault();
+                                                 document.getElementById('logout-form').submit();">
+                                                    Salir
+                                                </a>
 
-                        </ul>
-                    </nav>
-                </div>
+                                                <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
+                                                    {{ csrf_field() }}
+                                                </form></li>
+
+                                        </ul>
+                                    </div>
+                                </li>
+                        @endif
                 <!-- script-for-menu -->
                 <script>
 $("span.menu").click(function(){
