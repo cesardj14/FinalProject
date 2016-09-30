@@ -112,10 +112,10 @@ new WOW().init();
 </div>
 </div>
 
-    <div class="container">
-        <div class="row">
+    <div class="container" >
+        <div class="row" >
             <div class="col-md-4 col-offset-1">
-            <a class="twitter-timeline" href="https://twitter.com/AVTTIOVENCA">Tweets by AVTTIOVENCA</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
+            <a data-tweet-limit="4" class="twitter-timeline" href="https://twitter.com/AVTTIOVENCA">Tweets by AVTTIOVENCA</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
         </div>
     </div>
