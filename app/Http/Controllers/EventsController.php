@@ -11,7 +11,7 @@ use Validator;
 
 class EventsController extends Controller
 {
-    /**
+    /*/**
      * Create a new controller instance.
      *
      * @return void
@@ -21,7 +21,7 @@ class EventsController extends Controller
         $this->middleware('auth');
     }
 
-    /**
+    /*/**
      * Display a listing of the resource.
      *
      * @return \Illuminate\Http\Response
@@ -41,7 +41,7 @@ class EventsController extends Controller
         }
     }
 
-    /**
+    /*/**
      * Show the form for creating a new resource.
      *
      * @return \Illuminate\Http\Response
@@ -52,7 +52,7 @@ class EventsController extends Controller
         return view ('eventos.create', ['events'=>$events]);
     }
 
-    /**
+    /*/**
      * Store a newly created resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -89,7 +89,7 @@ class EventsController extends Controller
         return redirect('eventos');
     }
 
-    /**
+    /*/**
      * Display the specified resource.
      *
      * @param  int  $id
@@ -101,7 +101,7 @@ class EventsController extends Controller
         return view('eventos.show', ['events' => $events]);
     }
 
-    /**
+    /*/**
      * Show the form for editing the specified resource.
      *
      * @param  int  $id
@@ -109,11 +109,11 @@ class EventsController extends Controller
      */
     public function edit($id)
     {
-        $event = events::findOrFail($id);
+        $events = events::findOrFail($id);
         return view ('eventos.edit', ['events' => $events]);
     }
 
-    /**
+    /*/**
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
@@ -125,7 +125,7 @@ class EventsController extends Controller
         //
     }
 
-    /**
+    /*/**
      * Remove the specified resource from storage.
      *
      * @param  int  $id
