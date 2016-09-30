@@ -20,7 +20,7 @@ class CreatePackagesTable extends Migration
             $table->text('description');
             $table->string('images', 45);
             $table->integer('nro_tickets');
-            $table->date('valid_form');
+            $table->date('valid_from');
             $table->date('valid_to');
             $table->timestamps();
             $table->integer('user_id')->unsigned();

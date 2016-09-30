@@ -8,6 +8,6 @@ class Package extends Model
 {
     protected $fillable =
         [
-           'title', 'destiny', 'description', 'valid_from'
+           'title', 'destiny', 'description', 'valid_from', 'user_id',
         ];
 }

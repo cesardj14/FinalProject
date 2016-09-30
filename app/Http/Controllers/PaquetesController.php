@@ -57,7 +57,7 @@ class PaquetesController extends Controller
      */
     public function store(Request $request)
     {
-        $v = Validator::make($request->all(),
+       /* $v = Validator::make($request->all(),
             [
                 'title' => 'required|max:255',
             ]);
@@ -68,8 +68,17 @@ class PaquetesController extends Controller
                 ->withInput();
         }
 
+       */
+
+
+
         Package::create ([
             'title' => $request->input('title'),
+            'destiny' => $request->input('destiny'),
+            'description' => $request->input('description'),
+            'valid_from' => $request->input('valid_from'),
+            'user_id' => Auth::user()->id,
+
         ]);
 
         return redirect('paquetes');
