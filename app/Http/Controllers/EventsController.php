@@ -49,7 +49,7 @@ class EventsController extends Controller
     public function create()
     {
         $events = new events();
-        return view ('eventos.create', ['event'=>$events]);
+        return view ('eventos.create', ['events'=>$events]);
     }
 
     /**
@@ -75,13 +75,13 @@ class EventsController extends Controller
 
 
 
-        events::create ([
+        events::create([
             'title' => $request->input('title'),
-            'destiny' => $request->input('destiny'),
             'description' => $request->input('description'),
             'valid_from' => $request->input('valid_from'),
             'valid_to' => $request->input('valid_to'),
             'nro_tickets' => $request->input('nro_tickets'),
+            'status' => $request->input('status'),
             'user_id' => Auth::user()->id,
 
         ]);
@@ -98,7 +98,7 @@ class EventsController extends Controller
     public function show($id)
     {
         $events = events::findOrFail($id);
-        return view('eventos.show', ['event' => $events]);
+        return view('eventos.show', ['events' => $events]);
     }
 
     /**
@@ -110,7 +110,7 @@ class EventsController extends Controller
     public function edit($id)
     {
         $event = events::findOrFail($id);
-        return view ('eventos.edit', ['event' => $event]);
+        return view ('eventos.edit', ['events' => $events]);
     }
 
     /**

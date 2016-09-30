@@ -8,6 +8,6 @@ class events extends Model
 {
     protected $fillable =
         [
-            'title', 'description', 'images', 'valid_to', 'valid_from', '', '',
+            'title', 'description', 'images', 'valid_from', 'valid_to', 'status', '',
         ];
 }
