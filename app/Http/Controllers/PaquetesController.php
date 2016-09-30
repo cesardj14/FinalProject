@@ -109,8 +109,8 @@ class PaquetesController extends Controller
      */
     public function edit($id)
     {
-        $film = Package::findOrFail($id);
-        return view ('paquetes.edit', ['packege' => $packege]);
+        $package = Package::findOrFail($id);
+        return view ('paquetes.edit', ['packege' => $package]);
     }
 
     /**
