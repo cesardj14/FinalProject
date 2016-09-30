@@ -63,6 +63,8 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li class="active"><a data-hover="Conciertos" href="{{ url('/conciertos')  }}">Conciertos</a></li>
                             <li class="active"><a data-hover="Fiestas" href="{{ url('/fiestas')  }}">Fiestas</a></li>
                             <li class="active"><a data-hover="Planes" href="{{ url('/planes')  }}">Planes</a></li>
+                            <li class="active"><a data-hover="Login" href="{{ url('/login')  }}">Login</a></li>
+                            <li class="active"><a data-hover="Register" href="{{ url('/register')  }}">Register</a></li>
 
 
                         </ul>
