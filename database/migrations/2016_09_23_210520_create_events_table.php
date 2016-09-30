@@ -21,7 +21,7 @@ class CreateEventsTable extends Migration
             $table->text('description');
             $table->string('images', 45);
             $table->integer('nro_tickets');
-            $table->date('valid_from');
+            $table->date('valid_from','ddmmYY');
             $table->date('valid_to');
             $table->timestamps();
             $table->enum('status',['m']);
