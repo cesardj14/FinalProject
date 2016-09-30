@@ -4,12 +4,6 @@
            value="{{ $events->title or old('title') }}">
     <br>
 
-    <label for="destiny"><strong>Destino: </strong></label>
-    <input type="text" class="form-control" id="destiny" name="destiny" placeholder="Destino del evento"
-           value="{{ $events->destiny or old('destiny') }}">
-
-    <br>
-
     <label for="description"><strong>Descripcion: </strong></label>
     <input type="text" class="form-control" id="description" name="description" placeholder="Descripcion del evento"
            value="{{ $events->description or old('description') }}">
@@ -22,5 +16,10 @@
 
     <br>
 
+    <label for="valid_to"><strong>Valido hasta: </strong></label>
+    <input type="date" class="form-control" id="valid_to" name="valid_to" placeholder="Valido hasta..."
+           value="{{ $events->valid_to or old('valid_to') }}">
+
+    <br>
 
 </div>
