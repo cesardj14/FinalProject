@@ -29,8 +29,11 @@ class PaquetesController extends Controller
     public function index()
     {
 
+        $packages = Package::paginate(10);
+
+
         if(Auth::user()->hasRole('Administrador')){
-            return view('/paquetes.index');
+            return view('/paquetes.index', ['packages' => $packages]);
         }elseif(Auth::user()->hasRole('Cliente')){
             return view('index');
         }else{
@@ -77,6 +80,8 @@ class PaquetesController extends Controller
             'destiny' => $request->input('destiny'),
             'description' => $request->input('description'),
             'valid_from' => $request->input('valid_from'),
+            'valid_to' => $request->input('valid_to'),
+            'nro_tickets' => $request->input('nro_tickets'),
             'user_id' => Auth::user()->id,
 
         ]);
@@ -93,7 +98,7 @@ class PaquetesController extends Controller
     public function show($id)
     {
         $package = Package::findOrFail($id);
-        return view('paquetes.show', ['packege' => $package]);
+        return view('paquetes.show', ['package' => $package]);
     }
 
     /**

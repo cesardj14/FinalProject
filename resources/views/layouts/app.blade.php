@@ -47,6 +47,8 @@
                     <li><a href="{{ url('/home') }}">Dashboard</a></li>
                     @if(Auth::user()->hasRole('Administrador'))
                         <li><a href="{{ url('/paquetes') }}">Paquetes</a></li>
+                        <li><a href="{{ url('/eventos') }}">Eventos</a></li>
+                        <li><a href="{{ url('/news') }}">Noticias</a></li>
                     @endif
                 @endif
             </ul>

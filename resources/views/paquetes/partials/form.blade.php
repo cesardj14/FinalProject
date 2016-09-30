@@ -17,8 +17,24 @@
     <br>
 
     <label for="valid_from"><strong>Valido desde: </strong></label>
-    <input type="date" class="form-control" id="valid_from" name="valid_from" placeholder="..."
+    <input type="date" class="form-control" id="valid_from" name="valid_from" placeholder="Valido desde..."
            value="{{ $package->valid_from or old('valid_from') }}">
+
+    <br>
+
+    <label for="valid_to"><strong>Valido hasta: </strong></label>
+    <input type="date" class="form-control" id="valid_to" name="valid_to" placeholder="Valido hasta..."
+           value="{{ $package->valid_to or old('valid_to') }}">
+
+    <br>
+
+    <label for="nro_tickets"><strong>Numero de entradas</strong></label>
+    <input type="number" class="form-control" id="nro_tickets" name="nro_tickets" placeholder="Numero de entradas"
+           value="{{ $package->nro_tickets or old('nro_tickets') }}">
+
+    <br>
+
+
 
 
 </div>

@@ -1,4 +1,6 @@
 
+
+
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -60,9 +62,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                     <span class="menu"> </span>
                     <nav class="link-effect-4" id="link-effect-4">
                         <ul>
-                            <li class="active"><a data-hover="Home" href="{{ url('/')  }}">Home</a></li>
-                            <li class="active"><a data-hover="Internacionales" href="{{ url('/paquetesi')  }}">Internacionales</a></li>
-                            <li class="active"><a data-hover="Noticias" href="{{ url('/news')  }}">Noticias</a></li>
+                            <li><a data-hover="Home" href="{{ url('/')  }}">Home</a></li>
+                            <li><a data-hover="Internacionales" href="{{ url('/paquetesi')  }}">Internacionales</a></li>
+                            <li><a data-hover="Noticias" href="{{ url('/news')  }}">Noticias</a></li>
                             @if (Auth::guest())
                                 <li><a data-hover="Registrarse" href="{{ url('/register') }}">Registrarse</a></li>
                                 <li><a data-hover="Login" href="{{ url('/login') }}">Login</a></li>
@@ -118,17 +120,19 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     </div>
 </div>
 
-<!--blog-section-->
+<!--paquetes-->
+    @section('content')
 <div class="row">
 
+    @foreach($packages as $package)
     <div class="col-sm-4 col-lg-4 col-md-4" >
         <div class="thumbnail">
             <img src="images/my1.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">{{ $package->title }}</a>
                 </h4>
-                <p>prueba</p>
+                <p>{{ $package->description }}</p>
                 <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
                     Cotizar
                 </button>
@@ -136,89 +140,12 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
         </div>
     </div>
+        @endforeach
 
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <img src="images/my1.jpg" alt="">
-            <div class="caption">
-                <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
-                </h4>
-                <p>prueba</p>
-                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
-                    Cotizar
-                </button>
-            </div>
 
-        </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <img src="images/my1.jpg" alt="">
-            <div class="caption">
-                <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
-                </h4>
-                <p>prueba</p>
-                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
-                    Cotizar
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <img src="images/my1.jpg" alt="">
-            <div class="caption">
-                <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
-                </h4>
-                <p>prueba</p>
-                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
-                    Cotizar
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <img src="images/my1.jpg" alt="">
-            <div class="caption">
-                <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
-                </h4>
-                <p>prueba</p>
-                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
-                    Cotizar
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <img src="images/my1.jpg" alt="">
-            <div class="caption">
-                <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
-                </h4>
-                <p>prueba</p>
-                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
-                    Cotizar
-                </button>
-            </div>
-
-        </div>
-    </div>
 
 </div>
-
+@endsection
 
 
 

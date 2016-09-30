@@ -18,6 +18,7 @@ Route::get('/', function () {
     return view('index');
 });
 
+
 Route::get('/paquetesn',function(){
     return view('paquetesn');
 });
