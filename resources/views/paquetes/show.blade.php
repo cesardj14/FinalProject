@@ -45,7 +45,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <!--logo-->
                 <div class="logo">
                     <div class="logo">
-                        <a href="#"><h1><span>Vista</span></h1></a>
+                        <a href="#"><h1><span>Vista.</span></h1></a>
                     </div>
                 </div>
                 <!--//logo-->
