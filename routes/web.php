@@ -71,15 +71,7 @@ Route::get('/redirect/{provider}', 'SocialAuthController@redirect');
 Route::get('/callback/{provider}', 'SocialAuthController@callback');
 
 
-Route::resource('/paquetes.index', 'PaquetesController');
-
-Route::get('/paquetes.index', function(){
-    return view('paquetes.index');
-});
-
-Route::get('/paquetes.create', function(){
-    return view('paquetes.create');
-});
+Route::resource('/paquetes', 'PaquetesController');
 
 
 Route::get('/home', 'HomeController@index');
