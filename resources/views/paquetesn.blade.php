@@ -1,6 +1,3 @@
-
-
-
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -10,7 +7,7 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Outdoors a Travel Category  Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
+    <title>TioVen | Paquetes Nacionales</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Outdoors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -121,7 +118,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 
 <!--paquetes-->
-    @section('content')
 <div class="row">
 
     @foreach($packages as $package)
@@ -130,12 +126,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <img src="images/my1.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">{{ $package->title }}</a>
+                <h4><a href="{{ url('/paquetes/' . $package->id)  }}">{{ $package->title }}</a>
                 </h4>
                 <p>{{ $package->description }}</p>
-                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
-                    Cotizar
-                </button>
+                <a href="{{ url('/paquetes/' . $package->id)  }}" class="btn btn-primary">Cotizar</a>
             </div>
 
         </div>
@@ -145,9 +139,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 </div>
-@endsection
-
-
 
 <div class="footer text-center">
     <div class="container">
@@ -155,8 +146,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <ul class="social wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
             <li><a href="#" class="tw"></a></li>
             <li><a href="#" class="fb"> </a></li>
-            <li><a href="#" class="in"> </a></li>
-            <li><a href="#" class="dott"></a></li>
+            
             <div class="clearfix"></div>
         </ul>
     </div>

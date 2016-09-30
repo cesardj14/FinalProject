@@ -19,13 +19,7 @@ Route::get('/', function () {
 });
 
 
-Route::get('/paquetesn',function(){
-    return view('paquetesn');
-});
 
-Route::get('/paquetesi',function(){
-    return view('paquetesi');
-});
 
 
 Route::get('/eventos',function(){
@@ -60,6 +54,8 @@ Route::get('/planesv',function(){
     return view('planesv');
 });
 
+
+
 Route::get('twitter', function () {
     return view('twitterAuth');
 });
@@ -70,5 +66,9 @@ Route::get('/callback/{provider}', 'SocialAuthController@callback');
 
 
 Route::resource('/paquetes', 'PaquetesController');
+
+Route::get('/paquetesn', 'PaquetesController@paquetesn');
+Route::get('/paquetesi', 'PaquetesController@paquetesi');
+
 Route::resource('/eventos', 'EventsController');
 Route::get('/home', 'HomeController@index');
