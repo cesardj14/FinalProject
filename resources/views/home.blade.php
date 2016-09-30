@@ -8,7 +8,7 @@
                 <div class="panel-heading">Dashboard</div>
 
                 <div class="panel-body">
-                    Hola Cesars
+                    Hola Admin!
                 </div>
             </div>
         </div>

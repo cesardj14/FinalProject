@@ -119,7 +119,7 @@ $(document).ready(function() {
             <img src="images/b2.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">Nada</a>
                 </h4>
                 <p>prueba</p>
                 <button type="button" class="btn btn-default" href="{{ url('/cotizar')  }}" style="background:royalblue; color: white;">
@@ -135,7 +135,7 @@ $(document).ready(function() {
             <img src="images/b2.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">Nada</a>
                 </h4>
                 <p>prueba</p>
                 <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
@@ -151,7 +151,7 @@ $(document).ready(function() {
             <img src="images/b2.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">Nada</a>
                 </h4>
                 <p>prueba</p>
                 <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
@@ -167,7 +167,7 @@ $(document).ready(function() {
             <img src="images/b2.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">Nada</a>
                 </h4>
                 <p>prueba</p>
                 <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
@@ -183,7 +183,7 @@ $(document).ready(function() {
             <img src="images/b2.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">Nada</a>
 </h4>
                 <p>prueba</p>
                 <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
@@ -199,7 +199,7 @@ $(document).ready(function() {
             <img src="images/b2.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">Nada</a>
                 </h4>
                 <p>prueba</p>
                 <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
