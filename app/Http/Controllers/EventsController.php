@@ -133,7 +133,7 @@ class EventsController extends Controller
      */
     public function destroy($id)
     {
-        Event::destroy($id);
+        events::destroy($id);
         return redirect('eventos.index');
     }
 }
