@@ -2,7 +2,7 @@
 
 namespace App\Http\Controllers;
 
-use App\events;
+use App\Event;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -29,7 +29,7 @@ class EventsController extends Controller
     public function index()
     {
 
-        $events = events::paginate(10);
+        $events = Event::paginate(10);
 
 
         if(Auth::user()->hasRole('Administrador')){
@@ -48,8 +48,8 @@ class EventsController extends Controller
      */
     public function create()
     {
-        $events = new events();
-        return view ('eventos.create', ['events'=>$events]);
+        $event = new Event();
+        return view ('eventos.create', ['event'=>$event]);
     }
 
     /*/**
@@ -75,13 +75,13 @@ class EventsController extends Controller
 
 
 
-        events::create([
+        Event::create([
             'title' => $request->input('title'),
             'description' => $request->input('description'),
             'valid_from' => $request->input('valid_from'),
             'valid_to' => $request->input('valid_to'),
             'nro_tickets' => $request->input('nro_tickets'),
-            'status' => $request->input('status'),
+            /*'status' => $request->input('status'),*/
             'user_id' => Auth::user()->id,
 
         ]);
@@ -97,8 +97,8 @@ class EventsController extends Controller
      */
     public function show($id)
     {
-        $events = events::findOrFail($id);
-        return view('eventos.show', ['events' => $events]);
+        $event = Event::findOrFail($id);
+        return view('eventos.show', ['event' => $event]);
     }
 
     /*/**
@@ -109,8 +109,8 @@ class EventsController extends Controller
      */
     public function edit($id)
     {
-        $events = events::findOrFail($id);
-        return view ('eventos.edit', ['events' => $events]);
+        $event = Event::findOrFail($id);
+        return view ('eventos.edit', ['event' => $event]);
     }
 
     /*/**
@@ -133,7 +133,7 @@ class EventsController extends Controller
      */
     public function destroy($id)
     {
-        events::destroy($id);
-        return redirect('eventos.index');
+        Event::destroy($id);
+        return redirect('/eventos');
     }
 }

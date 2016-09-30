@@ -14,7 +14,6 @@
                         <table class="table table-bordered">
                             <tr>
                                 <th class="text-center">Titulo</th>
-                                <th class="text-center">Lugar</th>
                                 <th class="text-center">Descripcion</th>
                                 <th class="text-center">Valido Desde</th>
                                 <th class="text-center">Valido Hasta</th>
@@ -26,12 +25,11 @@
                                 <tr>
 
                                     <td>{{ $event->title }}</td>
-                                    <td>{{ $event->destiny }}</td>
                                     <td>{{ $event->description }}</td>
                                     <td>{{ $event->valid_from }}</td>
                                     <td>{{ $event->valid_to }}</td>
                                     <td>{{ $event->nro_tickets }}</td>
-                                    <td>ge
+                                    <td>
 
                                         <table>
                                             <tr>
@@ -50,7 +48,7 @@
                                                         aria-hidden="true"></span>
                                                     </a>
 
-                                                    <form id="delete-form" action="{{ url('/eventos/'.$package->id) }}" method="POST"
+                                                    <form id="delete-form" action="{{ url('/eventos/'.$event->id) }}" method="POST"
                                                           style="display: none;">
                                                         {{ method_field('DELETE') }}
                                                         {{ csrf_field() }}
