@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Package;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
@@ -26,6 +27,7 @@ class PaquetesController extends Controller
      */
     public function index()
     {
+
         if(Auth::user()->hasRole('Administrador')){
             return view('paquetes.index');
         }elseif(Auth::user()->hasRole('Cliente')){
@@ -42,7 +44,8 @@ class PaquetesController extends Controller
      */
     public function create()
     {
-        //
+        $package = new Package();
+        return view ('paquetes.create', ['package'=>$package]);
     }
 
     /**
@@ -53,7 +56,22 @@ class PaquetesController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        $v = Validator::make($request->all(),
+            [
+                'title' => 'required|max:255',
+            ]);
+        if ($v->fails())
+        {
+            return redirect('paquetes.create')
+                ->withErrors($v)
+                ->withInput();
+        }
+
+        Package::create ([
+            'title' => $request->input('title'),
+        ]);
+
+        return redirect('paquetes.index');
     }
 
     /**
@@ -64,7 +82,8 @@ class PaquetesController extends Controller
      */
     public function show($id)
     {
-        //
+        $package = Package::findOrFail($id);
+        return view('paquetes.show', ['packege' => $package]);
     }
 
     /**
@@ -75,7 +94,8 @@ class PaquetesController extends Controller
      */
     public function edit($id)
     {
-        //
+        $film = Package::findOrFail($id);
+        return view ('paquetes.edit', ['packege' => $packege]);
     }
 
     /**
@@ -98,6 +118,7 @@ class PaquetesController extends Controller
      */
     public function destroy($id)
     {
-        //
+        Package::destroy($id);
+        return redirect('paquetes.index');
     }
 }
