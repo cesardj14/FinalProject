@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-    <title>Outdoors a Travel Category  Flat Bootstrap Responsive Website Template | Single :: w3layouts</title>
+    <title>TioVen | Eventos</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     <meta name="keywords" content="Outdoors Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
@@ -220,8 +220,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         <ul class="social wow slideInDown" data-wow-duration="1s" data-wow-delay=".3s">
             <li><a href="#" class="tw"></a></li>
             <li><a href="#" class="fb"> </a></li>
-            <li><a href="#" class="in"> </a></li>
-            <li><a href="#" class="dott"></a></li>
+
             <div class="clearfix"></div>
         </ul>
     </div>
