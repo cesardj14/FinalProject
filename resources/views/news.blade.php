@@ -54,9 +54,9 @@ new WOW().init();
                     <nav class="link-effect-4" id="link-effect-4">
                         <ul>
                             <li class="active"><a data-hover="Home" href="{{ url('/')  }}">Home</a></li>
-                            <li class="active"><a data-hover="Conferencias" href="{{ url('/conferencias')  }}">Conferencias</a></li>
-                            <li class="active"><a data-hover="Fiestas" href="{{ url('/fiestas')  }}">Fiestas</a></li>
-                            <li class="active"><a data-hover="Planes" href="{{ url('/planesv')  }}">Planes</a></li>
+                            <li class="active"><a data-hover="Paquetes" href="{{ url('/paquetes')  }}">Paquetes</a></li>
+                            <li class="active"><a data-hover="Eventos" href="{{ url('/eventos')  }}">Eventos</a></li>
+
 @if (Auth::guest())
     <li><a data-hover="Registrarse" href="{{ url('/register') }}">Registrarse</a></li>
     <li><a data-hover="Login" href="{{ url('/login') }}">Login</a></li>

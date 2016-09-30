@@ -55,6 +55,7 @@ new WOW().init();
                         <ul>
                             <li class="active"><a data-hover="Home" href="{{ url('/')  }}">Home</a></li>
                             <li class="active"><a data-hover="Eventos" href="{{ url('/eventos')  }}">Eventos</a></li>
+                            <li class="active"><a data-hover="Noticias" href="{{ url('/news')  }}">Noticias</a></li>
                             @if (Auth::guest())
                                 <li><a data-hover="Registrarse" href="{{ url('/register') }}">Registrarse</a></li>
                                 <li><a data-hover="Login" href="{{ url('/login') }}">Login</a></li>

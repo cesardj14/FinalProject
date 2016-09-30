@@ -3,9 +3,15 @@
   <component name="ChangeListManager">
     <list default="true" id="97c3b4ed-6cd2-4380-a787-9cfd6765de06" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/cotizar.blade.php" afterPath="$PROJECT_DIR$/resources/views/cotizar.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/conciertos.blade.php" afterPath="$PROJECT_DIR$/resources/views/conciertos.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/conferencias.blade.php" afterPath="$PROJECT_DIR$/resources/views/conferencias.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/eventos.blade.php" afterPath="$PROJECT_DIR$/resources/views/eventos.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/fiestas.blade.php" afterPath="$PROJECT_DIR$/resources/views/fiestas.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/news.blade.php" afterPath="$PROJECT_DIR$/resources/views/news.blade.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/paquetes.blade.php" afterPath="$PROJECT_DIR$/resources/views/paquetes.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/paquetesi.blade.php" afterPath="$PROJECT_DIR$/resources/views/paquetesi.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/paquetesn.blade.php" afterPath="$PROJECT_DIR$/resources/views/paquetesn.blade.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/resources/views/planesv.blade.php" afterPath="$PROJECT_DIR$/resources/views/planesv.blade.php" />
     </list>
     <ignored path="TioVEN.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -37,32 +43,30 @@
       <file leaf-file-name="paquetesi.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/paquetesi.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="255">
+              <caret line="63" column="116" selection-start-line="63" selection-start-column="116" selection-end-line="63" selection-end-column="116" />
               <folding>
-                <element signature="n#style#0;n#ul#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#li#5;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/index.blade.php">
+      <file leaf-file-name="paquetesn.blade.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/resources/views/paquetesn.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="327">
-              <caret line="541" column="0" selection-start-line="541" selection-start-column="0" selection-end-line="541" selection-end-column="0" />
-              <folding>
-                <element signature="n#style#0;n#ul#0;n#div#0;n#li#8;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="221">
+              <caret line="64" column="116" selection-start-line="64" selection-start-column="116" selection-end-line="64" selection-end-column="116" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="home.blade.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
+      <file leaf-file-name="planesv.blade.php" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/resources/views/planesv.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state relative-caret-position="238">
+              <caret line="65" column="116" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
               <folding />
             </state>
           </provider>
@@ -71,10 +75,10 @@
       <file leaf-file-name="eventos.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/eventos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="17">
-              <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
+            <state relative-caret-position="153">
+              <caret line="57" column="116" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
               <folding>
-                <element signature="n#style#0;n#ul#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#li#5;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -83,7 +87,7 @@
       <file leaf-file-name="cotizar.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/cotizar.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="324">
+            <state relative-caret-position="1242">
               <caret line="128" column="75" selection-start-line="128" selection-start-column="75" selection-end-line="128" selection-end-column="75" />
               <folding />
             </state>
@@ -93,8 +97,8 @@
       <file leaf-file-name="conferencias.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/conferencias.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-612">
-              <caret line="81" column="52" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
+            <state relative-caret-position="136">
+              <caret line="65" column="116" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
               <folding />
             </state>
           </provider>
@@ -103,8 +107,8 @@
       <file leaf-file-name="conciertos.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/conciertos.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="261" selection-end-column="7" />
+            <state relative-caret-position="187">
+              <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="116" />
               <folding />
             </state>
           </provider>
@@ -113,10 +117,10 @@
       <file leaf-file-name="fiestas.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/fiestas.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
+            <state relative-caret-position="238">
+              <caret line="65" column="116" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
               <folding>
-                <element signature="n#style#0;n#ul#0;n#div#0;n#li#6;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#li#7;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -125,20 +129,20 @@
       <file leaf-file-name="paquetes.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/paquetes.blade.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="123" column="84" selection-start-line="123" selection-start-column="84" selection-end-line="123" selection-end-column="84" />
+            <state relative-caret-position="153">
+              <caret line="57" column="116" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
               <folding>
-                <element signature="n#style#0;n#ul#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#ul#0;n#div#0;n#li#5;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="news.blade.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="news.blade.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/resources/views/news.blade.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="137">
-              <caret line="115" column="24" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+              <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -200,16 +204,16 @@
         <option value="$PROJECT_DIR$/resources/views/paquetes/index.blade.php" />
         <option value="$PROJECT_DIR$/routes/web.php" />
         <option value="$PROJECT_DIR$/resources/views/index.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/planesv.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/paquetesn.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/paquetesi.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/fiestas.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/eventos.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/conferencias.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/conciertos.blade.php" />
-        <option value="$PROJECT_DIR$/resources/views/paquetes.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/cotizar.blade.php" />
         <option value="$PROJECT_DIR$/resources/views/news.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/conciertos.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/conferencias.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/eventos.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/fiestas.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/paquetes.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/paquetesi.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/paquetesn.blade.php" />
+        <option value="$PROJECT_DIR$/resources/views/planesv.blade.php" />
       </list>
     </option>
   </component>
@@ -410,7 +414,7 @@
       <workItem from="1475108212855" duration="6631000" />
       <workItem from="1475165172526" duration="1529000" />
       <workItem from="1475177723496" duration="8872000" />
-      <workItem from="1475203893996" duration="3605000" />
+      <workItem from="1475203893996" duration="3960000" />
     </task>
     <task id="LOCAL-00001" summary="act 25-09-16 15:30">
       <created>1474831861626</created>
@@ -524,15 +528,22 @@
       <option name="project" value="LOCAL" />
       <updated>1475205343162</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="act 29-09-20016 23:52">
+      <created>1475207549250</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1475207549250</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="105972000" />
+    <option name="totallyTimeSpent" value="106327000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Gulp" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2306003" sideWeight="0.49029127" order="0" side_tool="false" content_ui="combo" />
@@ -543,7 +554,7 @@
       <window_info id="npm" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32440946" sideWeight="0.48184568" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32440946" sideWeight="0.48184568" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1860817" sideWeight="0.50970876" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -605,7 +616,8 @@
     <MESSAGE value="act 28-09-16 22:11" />
     <MESSAGE value="arreglos" />
     <MESSAGE value="act 29-09-20016 23:15" />
-    <option name="LAST_COMMIT_MESSAGE" value="act 29-09-20016 23:15" />
+    <MESSAGE value="act 29-09-20016 23:52" />
+    <option name="LAST_COMMIT_MESSAGE" value="act 29-09-20016 23:52" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -896,86 +908,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/planesv.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#6;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/paquetesn.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="5" selection-start-line="8" selection-start-column="5" selection-end-line="8" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/paquetesi.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/resources/views/home.blade.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/fiestas.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="5" selection-start-line="7" selection-start-column="5" selection-end-line="7" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#6;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/eventos.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="5" selection-start-line="1" selection-start-column="5" selection-end-line="1" selection-end-column="5" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/paquetes.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="123" column="84" selection-start-line="123" selection-start-column="84" selection-end-line="123" selection-end-column="84" />
-          <folding>
-            <element signature="n#style#0;n#ul#0;n#div#0;n#li#4;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/cotizar.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="324">
-          <caret line="128" column="75" selection-start-line="128" selection-start-column="75" selection-end-line="128" selection-end-column="75" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/conciertos.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="261" selection-end-column="7" />
           <folding />
         </state>
       </provider>
@@ -990,18 +926,90 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/conferencias.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/news.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-612">
-          <caret line="81" column="52" selection-start-line="81" selection-start-column="52" selection-end-line="81" selection-end-column="52" />
+        <state relative-caret-position="137">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/news.blade.php">
+    <entry file="file://$PROJECT_DIR$/resources/views/conciertos.blade.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="137">
-          <caret line="115" column="24" selection-start-line="115" selection-start-column="24" selection-end-line="115" selection-end-column="24" />
+        <state relative-caret-position="187">
+          <caret line="65" column="28" selection-start-line="65" selection-start-column="28" selection-end-line="65" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/conferencias.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="65" column="116" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/cotizar.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1242">
+          <caret line="128" column="75" selection-start-line="128" selection-start-column="75" selection-end-line="128" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/eventos.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="57" column="116" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#li#5;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/fiestas.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="65" column="116" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#li#7;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/paquetes.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="57" column="116" selection-start-line="57" selection-start-column="116" selection-end-line="57" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#li#5;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/paquetesi.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="63" column="116" selection-start-line="63" selection-start-column="116" selection-end-line="63" selection-end-column="116" />
+          <folding>
+            <element signature="n#style#0;n#ul#0;n#div#0;n#li#5;n#ul#0;n#nav#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/paquetesn.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="64" column="116" selection-start-line="64" selection-start-column="116" selection-end-line="64" selection-end-column="116" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/resources/views/planesv.blade.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="65" column="116" selection-start-line="65" selection-start-column="116" selection-end-line="65" selection-end-column="116" />
           <folding />
         </state>
       </provider>
