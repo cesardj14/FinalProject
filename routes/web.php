@@ -60,6 +60,8 @@ Route::get('/planesv',function(){
     return view('planesv');
 });
 
+
+
 Route::get('twitter', function () {
     return view('twitterAuth');
 });
