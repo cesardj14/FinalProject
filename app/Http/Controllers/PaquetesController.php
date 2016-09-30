@@ -35,7 +35,7 @@ class PaquetesController extends Controller
         if(Auth::user()->hasRole('Administrador')){
             return view('/paquetes.index', ['packages' => $packages]);
         }elseif(Auth::user()->hasRole('Cliente')){
-            return view('index');
+            return view('/paquetesn', ['packages' => $packages]);
         }else{
             return redirect('/');
         }

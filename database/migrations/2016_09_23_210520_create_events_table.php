@@ -15,11 +15,13 @@ class CreateEventsTable extends Migration
     {
         Schema::create('events', function (Blueprint $table) {
             $table->increments('id');
+            $table->string('name_events_type')->unsigned();
+            $table->foreign('name_events_type')->references('name')->on('events_type');
             $table->string('title', 45);
             $table->text('description');
             $table->string('images', 45);
             $table->integer('nro_tickets');
-            $table->date('valid_from');
+            $table->date('valid_from','ddmmYY');
             $table->date('valid_to');
             $table->timestamps();
             $table->enum('status',['m']);
