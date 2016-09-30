@@ -2,9 +2,12 @@
 
 namespace App\Http\Controllers;
 
+use App\events;
 use Illuminate\Http\Request;
 
 /*use App\Http\Requests;*/
+use Illuminate\Auth;
+/*use Validator;*//*no me sirve tavo*/
 
 class EventsController extends Controller
 {
@@ -13,9 +16,23 @@ class EventsController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
+
     public function index()
     {
+        $events = events::paginate(10);
 
+
+        if(Auth::user()->hasRole('Administrador')){
+            return view('/eventos.index', ['eventos' => $events]);
+        }elseif(Auth::user()->hasRole('Cliente')){
+            return view('index');
+        }else{
+            return redirect('/');
+        }
     }
 
    /* /**
@@ -25,7 +42,8 @@ class EventsController extends Controller
      */
     public function create()
     {
-
+        $events = new events();
+        return view ('eventos.create', ['eventos'=>$events]);
     }
 
    /* /**
@@ -36,7 +54,17 @@ class EventsController extends Controller
      */
     public function store(Request $request)
     {
+        events::create ([
+            'title' => $request->input('title'),
+            'description' => $request->input('description'),
+            'images' => $request->input('images'),
+            'valid_from' => $request->input('valid_from'),
+            'valid_to' => $request->input('valid_to'),
+           // 'nro_tickets' => $request->input('nro_tickets'),
+          //  'user_id' => Auth::user()->id,
 
+        ]);
+        return redirect('events');
     }
 
    /* /**
@@ -47,7 +75,8 @@ class EventsController extends Controller
      */
     public function show($id)
     {
-
+        $events = events::findOrFail($id);
+        return view('eventos.show', ['events' => $events]);
     }
 
     /*/**
@@ -58,7 +87,8 @@ class EventsController extends Controller
      */
     public function edit($id)
     {
-
+        $events = eventos::findOrFail($id);
+        return view ('eventos.edit', ['events' => $events]);
     }
 
     /*/**
@@ -81,6 +111,7 @@ class EventsController extends Controller
      */
     public function destroy($id)
     {
-
+        events::destroy($id);
+        return redirect('eventos.index');
     }
 }
