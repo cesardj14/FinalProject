@@ -136,4 +136,16 @@ class PaquetesController extends Controller
         Package::destroy($id);
         return redirect('paquetes.index');
     }
+
+    public function paquetesi(){
+        return view('paquetesi');
+    }
+
+    public function paquetesn(){
+
+        $packages = Package::all();
+        return view('paquetesn', ['packages'=>$packages]);
+    }
+
+
 }

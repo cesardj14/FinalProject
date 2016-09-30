@@ -1,6 +1,3 @@
-
-
-
 <!--
 Author: W3layouts
 Author URL: http://w3layouts.com
@@ -121,7 +118,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 </div>
 
 <!--paquetes-->
-    @section('content')
 <div class="row">
 
     @foreach($packages as $package)
@@ -130,12 +126,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <img src="images/my1.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">{{ $package->title }}</a>
+                <h4><a href="{{ url('/paquetes/' . $package->id)  }}">{{ $package->title }}</a>
                 </h4>
                 <p>{{ $package->description }}</p>
-                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
-                    Cotizar
-                </button>
+                <a href="{{ url('/paquetes/' . $package->id)  }}" class="btn btn-primary">Cotizar</a>
             </div>
 
         </div>
@@ -145,9 +139,6 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 
 
 </div>
-@endsection
-
-
 
 <div class="footer text-center">
     <div class="container">
