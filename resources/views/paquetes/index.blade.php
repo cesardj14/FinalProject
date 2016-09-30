@@ -1,1 +1,1 @@
-@extends('layouts.app')
+<a href="{{ url('/paquetes.create') }}">Crear paquete</a>

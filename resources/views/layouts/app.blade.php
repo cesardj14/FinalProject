@@ -46,7 +46,7 @@
                 @if(!Auth::guest())
                     <li><a href="{{ url('/home') }}">Dashboard</a></li>
                     @if(Auth::user()->hasRole('Administrador'))
-                        <li><a href="{{ url('/paquetes') }}">Paquetes</a></li>
+                        <li><a href="{{ url('/paquetes.index') }}">Paquetes</a></li>
                     @endif
                 @endif
             </ul>
