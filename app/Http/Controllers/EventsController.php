@@ -48,8 +48,8 @@ class EventsController extends Controller
      */
     public function create()
     {
-        $events = new events();
-        return view ('eventos.create', ['events'=>$events]);
+        /*$events = new events();*/
+        return view ('eventos.create')/*, ['events'=>$events])*/;
     }
 
     /*/**
@@ -109,8 +109,8 @@ class EventsController extends Controller
      */
     public function edit($id)
     {
-        $events = events::findOrFail($id);
-        return view ('eventos.edit', ['events' => $events]);
+        $event = events::findOrFail($id);
+        return view ('eventos.edit', ['event' => $event]);
     }
 
     /*/**
