@@ -71,7 +71,4 @@ Route::get('/callback/{provider}', 'SocialAuthController@callback');
 
 Route::resource('/paquetes', 'PaquetesController');
 Route::resource('/eventos', 'EventsController');
-
-Route::resource('/eventos', 'EventsController');
-
 Route::get('/home', 'HomeController@index');

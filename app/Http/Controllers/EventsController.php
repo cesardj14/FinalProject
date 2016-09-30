@@ -2,14 +2,14 @@
 
 namespace App\Http\Controllers;
 
-use App\Event;
+use App\events;
 use Illuminate\Http\Request;
 
 use App\Http\Requests;
 use Auth;
 use Validator;
 
-class EventosController extends Controller
+class EventsController extends Controller
 {
     /**
      * Create a new controller instance.
@@ -29,7 +29,7 @@ class EventosController extends Controller
     public function index()
     {
 
-        $events = Event::paginate(10);
+        $events = events::paginate(10);
 
 
         if(Auth::user()->hasRole('Administrador')){
@@ -48,8 +48,8 @@ class EventosController extends Controller
      */
     public function create()
     {
-        $event = new Event();
-        return view ('eventos.create', ['event'=>$event]);
+        $events = new events();
+        return view ('eventos.create', ['event'=>$events]);
     }
 
     /**
@@ -75,7 +75,7 @@ class EventosController extends Controller
 
 
 
-        Event::create ([
+        events::create ([
             'title' => $request->input('title'),
             'destiny' => $request->input('destiny'),
             'description' => $request->input('description'),
@@ -97,8 +97,8 @@ class EventosController extends Controller
      */
     public function show($id)
     {
-        $event = Event::findOrFail($id);
-        return view('eventos.show', ['event' => $event]);
+        $events = events::findOrFail($id);
+        return view('eventos.show', ['event' => $events]);
     }
 
     /**
@@ -109,7 +109,7 @@ class EventosController extends Controller
      */
     public function edit($id)
     {
-        $event = Event::findOrFail($id);
+        $event = events::findOrFail($id);
         return view ('eventos.edit', ['event' => $event]);
     }
 
