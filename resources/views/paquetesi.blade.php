@@ -125,7 +125,23 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <img src="images/my2.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">Nada</a>
+                </h4>
+                <p>prueba</p>
+                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
+                    Cotizar
+                </button>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="col-sm-4 col-lg-4 col-md-4">
+        <div class="thumbnail">
+            <img src="images/my2.jpg" alt="">
+            <div class="caption">
+                <h4 class="pull-right">$24.99</h4>
+                <h4><a href="#">Nada</a>
                 </h4>
                 <p>prueba</p>
                 <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
@@ -157,23 +173,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <img src="images/my2.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
-                </h4>
-                <p>prueba</p>
-                <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
-                    Cotizar
-                </button>
-            </div>
-
-        </div>
-    </div>
-
-    <div class="col-sm-4 col-lg-4 col-md-4">
-        <div class="thumbnail">
-            <img src="images/my2.jpg" alt="">
-            <div class="caption">
-                <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">Nada</a>
                 </h4>
                 <p>prueba</p>
                 <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
@@ -189,7 +189,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <img src="images/my2.jpg" alt="" ">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">Nada</a>
                 </h4>
                 <p>prueba</p>
                 <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
@@ -205,7 +205,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             <img src="images/my2.jpg" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
-                <h4><a href="#">Un coño</a>
+                <h4><a href="#">Nada</a>
                 </h4>
                 <p>prueba</p>
                 <button type="button" class="btn btn-default" href="{{ url('#')  }}" style="background:royalblue; color: white;">
