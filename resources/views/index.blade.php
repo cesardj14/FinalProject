@@ -93,6 +93,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                                             <form id="logout-form" action="{{ url('/logout') }}" method="POST" style="display: none;">
                                                 {{ csrf_field() }}
                                             </form></li>
+                                        <li><a href="{{ url('/home') }}">Perfil</a></li>
 
                                     </ul>
                                 </div>
@@ -100,6 +101,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             @endif
 
                         </ul>
+
                     </nav>
                 </div>
                 <!-- script-for-menu -->

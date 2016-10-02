@@ -8,6 +8,7 @@ use Illuminate\Http\Request;
 use App\Http\Requests;
 use Auth;
 use Validator;
+use Illuminate\Support\Facades\File;
 
 class PaquetesController extends Controller
 {
@@ -73,7 +74,9 @@ class PaquetesController extends Controller
 
        */
 
-
+        $imageName = $request->file('foto')->getClientOriginalName();
+        $path = base_path() . "/public/images/paquetes/";
+        $request->file('foto')->move($path, $imageName);
 
         Package::create ([
             'title' => $request->input('title'),
@@ -83,6 +86,8 @@ class PaquetesController extends Controller
             'valid_to' => $request->input('valid_to'),
             'nro_tickets' => $request->input('nro_tickets'),
             'user_id' => Auth::user()->id,
+            'images' => $imageName,
+            'price' => $request->input('price'),
 
         ]);
 
@@ -97,8 +102,8 @@ class PaquetesController extends Controller
      */
     public function show($id)
     {
-        $package = Package::findOrFail($id);
-        return view('paquetes.show', ['package' => $package]);
+        $packages = Package::findOrFail($id);
+        return view('paquetes.show', ['packages' => $packages]);
     }
 
     /**
@@ -134,7 +139,7 @@ class PaquetesController extends Controller
     public function destroy($id)
     {
         Package::destroy($id);
-        return redirect('paquetes.index');
+        return redirect('paquetes');
     }
 
     public function paquetesi(){

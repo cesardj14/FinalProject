@@ -22,6 +22,7 @@ class CreatePackagesTable extends Migration
             $table->integer('nro_tickets');
             $table->date('valid_from');
             $table->date('valid_to');
+            $table->float('price',25,2);
             $table->timestamps();
             $table->integer('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');

@@ -19,6 +19,8 @@
                                 <th class="text-center">Valido Desde</th>
                                 <th class="text-center">Valido Hasta</th>
                                 <th class="text-center">Numero de tickets</th>
+                                <th class="text-center">Precio en BS</th>
+                                <th class="text-center">Imagen</th>
                             </tr>
 
 
@@ -31,7 +33,11 @@
                                     <td>{{ $package->valid_from }}</td>
                                     <td>{{ $package->valid_to }}</td>
                                     <td>{{ $package->nro_tickets }}</td>
+                                    <td>Bs. {{ $package->price }} </td>
                                     <td>
+                                        <img src="{{ asset('images/paquetes/'.$package->images) }}" alt="Paquete"
+                                             class="img-responsive">
+                                    </td>
 
                                         <table>
                                             <tr>

@@ -108,26 +108,27 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
             </div>
         </div>
     </div>
-    <div class="section-contact" id="contact">
-        <div class="container">
-            <h3 class="tittle">Producto</h3>
-            <form action="#" method="post">
-                <img src="images/my2.jpg" alt="">
-                <input type="text" name="Name" placeholder="Nombre del evento" required="">
-                <input type="text" name="Tipo" placeholder="Tipo de evento" required="">
-                <textarea placeholder="Descripcion" name="Message" required=""></textarea>
-                <input type="text" name="Price" placeholder="Precio por persona" required="">
-                <input type="text" name="Fechai" placeholder="Fecha de Inicio" required="">
-                <input type="text" name="Fechaf" placeholder="Fecha Final" required="">
-                <input type="text" name="Status" placeholder="Status del evento" required="">
+    <div class="row">
+
+        @foreach($packages as $package)
+            <div class="col-sm-4 col-lg-4 col-md-4" >
+                <div class="thumbnail">
+                    <img src="images/my1.jpg" alt="">
+                    <div class="caption">
+                        <h4 class="pull-right">$24.99</h4>
+                        <h4>{{ $package->title }}</a>
+                        </h4>
+                        <p>{{ $package->description }}</p>
+                        <a href="{{ url('/paquetes/' . $package->id)  }}" class="btn btn-primary">Cotizar</a>
+                    </div>
+
+                </div>
+            </div>
+        @endforeach
 
 
-                <input name="submit" type="submit" id="submit" value="SEND">
-                </p>
-            </form>
-        </div>
+
     </div>
-
 
 
 

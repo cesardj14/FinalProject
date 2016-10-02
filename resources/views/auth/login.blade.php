@@ -71,11 +71,14 @@
                                     Forgot Your Password?
                                 </a>
                             </div>
-                            <div class="row">
-                                <button class="btn btn-primary" href="{{ url('/auth/twitter') }}">Login con twitter</button>
-                            </div>
+
                         </div>
                     </form>
+                    <ul>
+                        <li><a href="{{ url('/redirect/twitter') }}">Twitter</a></li>
+                        <li><a href="{{ url('/redirect/facebook') }}">Facebook</a></li>
+                    </ul>
+                    </div>
                 </div>
             </div>
         </div>

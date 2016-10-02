@@ -123,7 +123,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
     @foreach($packages as $package)
     <div class="col-sm-4 col-lg-4 col-md-4" >
         <div class="thumbnail">
-            <img src="images/my1.jpg" alt="">
+            <img src="{{ asset('images/paquetes/'.$package->images) }}" alt="">
             <div class="caption">
                 <h4 class="pull-right">$24.99</h4>
                 <h4><a href="{{ url('/paquetes/' . $package->id)  }}">{{ $package->title }}</a>

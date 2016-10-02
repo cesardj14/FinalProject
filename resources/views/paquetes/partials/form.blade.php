@@ -34,6 +34,17 @@
 
     <br>
 
+    <label for="price"><strong>Precio (Bs.): </strong></label>
+    <input type="number" class="form-control" id="price" name="price" placeholder="Precio"
+           value="{{ $package->price or old('price') }}">
+
+    <br>
+
+        <label for="foto"><strong>Foto</strong></label>
+        <input type="file" class="form-control" id="foto" name="foto">
+    </div>
+
+
 
 
 
