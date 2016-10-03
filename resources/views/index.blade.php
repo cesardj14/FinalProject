@@ -72,6 +72,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <li><a data-hover="Eventos" href="#services" class="scroll">Eventos</a></li>
                             <li><a data-hover="Noticias" href="#review" class="scroll">Noticias</a></li>
                             <li><a data-hover="Contacto" href="#contact" class="scroll">Contacto</a></li>
+                            <!--<li><a data-hover="Contacto" href="#contact" class="scroll">Suscribete</a></li>-->
                             @if (Auth::guest())
                             <li><a data-hover="Registrarse" href="{{ url('/register') }}">Registrarse</a></li>
                                 <li><a data-hover="Login" href="{{ url('/login') }}">Login</a></li>
