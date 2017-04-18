@@ -45,7 +45,7 @@ new WOW().init();
                 <!--logo-->
                 <div class="logo">
                     <div class="logo">
-                        <a href="#"><h1><span>Conciertos</span></h1></a>
+                        <a href="#"><h1><span>Noticias</span></h1></a>
                     </div>
                 </div>
                 <!--//logo-->
@@ -117,6 +117,7 @@ new WOW().init();
             <div class="col-md-4 col-offset-1">
             <a data-tweet-limit="4" class="twitter-timeline" href="https://twitter.com/AVTTIOVENCA">Tweets by AVTTIOVENCA</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
             </div>
+            <textarea name="comment">Ingrese su comentario</textarea>
         </div>
     </div>
 
